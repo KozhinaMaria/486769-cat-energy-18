@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/150x50" alt="Кэт энерджи" width="150"
+        height="50">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <form class="form-program" action="https://echo.htmlacademy.ru">
+      <div class="form-program__wrapper">
+        <h2 class="form-program__title">Подбор программы</h2>
+        <p class="form-program__subtitle">Заполните анкету и мы подберем
+          программу питания для вашего кота</p>
+      </div>
+
+      <fieldset class="form-program__cat-info fieldset-block">
+        <label class="fieldset-block__label">
+          Имя:<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="text" id="catName"
+            name="catName" value="Барсик">
+        </label>
+        <label class="fieldset-block__label">
+          Вес (кг):<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="text" id="catWeight"
+            name="catWeight" value="7">
+        </label>
+        <label class="fieldset-block__label">
+          Возраст (лет): <input class="fieldset-block__value" type="text" id="catAge" name="catAge" value="7">
+        </label>
+
+      </fieldset>
+
+      <fieldset class="form-program__checkbox fieldset-block">
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="radio" name="goal" value="loseWeight" checked> Похудение
+        </label>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="radio" name="goal" value="putonWeight"> Набор массы
+        </label>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="radio" name="goal" value="other"> Не знаю (Нужен ваш совет)
+        </label>
+      </fieldset>
+
+      <fieldset class="form-program__user-contacts user-contacts fieldset-block">
+        <legend class="fieldset-block__legend">Контактные данные (владельца кота)</legend>
+        <label class="fieldset-block__label">
+          E-mail:<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="email" name="email"
+            value="kuklachev@gmail.com">
+        </label>
+        <label class="fieldset-block__label">
+          Телефон:<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="text" name="phone"
+            value="8 (960) 900-60-90">
+        </label>
+      </fieldset>
+
+
+
+      <fieldset class="form-program__comments fieldset-block">
+        <legend class="fieldset-block__legend">Комментарий</legend>
+        <textarea class="fieldset-block__textareas" rows="4" cols="50" name="comment">
+            Расскажите обо всех повадках кота
+        </textarea>
+      </fieldset>
+
+
+      <fieldset class="form-program__other fieldset-block">
+        <legend class="fieldset-block__legend">Дополнительно</legend>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="checkbox" name="composition" value="sweetener" checked>
+          Сахарозаменитель
+        </label>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="checkbox" name="composition" value="water">Питьевая вода
+        </label>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="checkbox" name="composition" value="milk"> Молоко
+        </label>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="checkbox" name="composition" value="vitamin"> Витамины
+        </label>
+      </fieldset>
+
+      <input class="button button--order" type="submit">Отправить заявку</input>
+
+      <small class="stats__legend stats__legend--bottom">
+        <sup class="required-asterix">*</sup> — Обязательные поля
+      </small>
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <section class="page-footer__map map">
+        <div class="map__wrapper">
+          <div class="map__contacts contacts">
+            <p class="contacts__text">приглашаем
+              к сотрудничеству
+              дилеров!</p>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+              Санкт-Петербург</p>
+          </div>
+          <div class="map__place"></div>
+        </div>
+      </section>
+
+      <div class="page-footer__logo-title logo-title">
+        <img class="page-footer__logo-title-image logo-title__image" src="https://via.placeholder.com/150x50"
+          alt="Кэт энерджи" width="150" height="50">
+      </div>
+      <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
