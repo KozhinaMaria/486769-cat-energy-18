@@ -38,44 +38,76 @@
           программу питания для вашего кота</p>
       </div>
 
-      <fieldset class="form-program__cat-info cat-info">
-        Имя:<sup>*</sup> <input type="text" name="catName" value="Барсик"><br>
-        Вес (кг):<sup>*</sup> <input type="text" name="catWeight" value="7"><br>
-        Возраст (лет): <input type="text" name="catAge" value="7"><br>
+      <fieldset class="form-program__cat-info fieldset-block">
+        <label class="fieldset-block__label">
+          Имя:<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="text" id="catName"
+            name="catName" value="Барсик">
+        </label>
+        <label class="fieldset-block__label">
+          Вес (кг):<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="text" id="catWeight"
+            name="catWeight" value="7">
+        </label>
+        <label class="fieldset-block__label">
+          Возраст (лет): <input class="fieldset-block__value" type="text" id="catAge" name="catAge" value="7">
+        </label>
 
-        <input type="checkbox" name="loseWeight" value="loseWeight" checked>Похудение<br>
-        <input type="checkbox" name="putonWeight" value="putonWeight">Набор массы<br>
-        <input type="checkbox" name="other" value="other">Не знаю (Нужен ваш совет)<br>
+      </fieldset>
+
+      <fieldset class="form-program__checkbox fieldset-block">
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="radio" name="goal" value="loseWeight" checked> Похудение
+        </label>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="radio" name="goal" value="putonWeight"> Набор массы
+        </label>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="radio" name="goal" value="other"> Не знаю (Нужен ваш совет)
+        </label>
+      </fieldset>
+
+      <fieldset class="form-program__user-contacts user-contacts fieldset-block">
+        <legend class="fieldset-block__legend">Контактные данные (владельца кота)</legend>
+        <label class="fieldset-block__label">
+          E-mail:<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="email" name="email"
+            value="kuklachev@gmail.com">
+        </label>
+        <label class="fieldset-block__label">
+          Телефон:<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="text" name="phone"
+            value="8 (960) 900-60-90">
+        </label>
       </fieldset>
 
 
-      <fieldset class="form-program__user-contacts user-contacts">
-        <legend>Контактные данные
-          (владельца кота)</legend>
-        E-mail:<sup>*</sup><input type="email" name="email" value="kuklachev@gmail.com"><br>
-        Телефон:<sup>*</sup><input type="text" name="phone" value="8 (960) 900-60-90"><br>
-      </fieldset>
 
-      <fieldset class="form-program__comments">
-        <legend>Комментарий</legend>
-        <textarea rows="4" cols="50" name="comment">
+      <fieldset class="form-program__comments fieldset-block">
+        <legend class="fieldset-block__legend">Комментарий</legend>
+        <textarea class="fieldset-block__textareas" rows="4" cols="50" name="comment">
             Расскажите обо всех повадках кота
-            </textarea>
+        </textarea>
       </fieldset>
 
 
-      <fieldset class="form-program__other">
-        <legend>Дополнительно</legend>
-        <input type="checkbox" name="sweetener" value="sweetener" checked>Сахарозаменитель<br>
-        <input type="checkbox" name="water" value="water">Питьевая вода<br>
-        <input type="checkbox" name="milk" value="milk">Молоко<br>
-        <input type="checkbox" name="vitamin" value="vitamin">Витамины<br>
+      <fieldset class="form-program__other fieldset-block">
+        <legend class="fieldset-block__legend">Дополнительно</legend>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="checkbox" name="composition" value="sweetener" checked>
+          Сахарозаменитель
+        </label>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="checkbox" name="composition" value="water">Питьевая вода
+        </label>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="checkbox" name="composition" value="milk"> Молоко
+        </label>
+        <label class="fieldset-block__label">
+          <input class="fieldset-block__value" type="checkbox" name="composition" value="vitamin"> Витамины
+        </label>
       </fieldset>
 
       <input class="button button--order" type="submit">Отправить заявку</input>
 
       <small class="stats__legend stats__legend--bottom">
-        <sup>*</sup> — Обязательные поля
+        <sup class="required-asterix">*</sup> — Обязательные поля
       </small>
     </form>
   </main>
