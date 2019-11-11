@@ -9,25 +9,21 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/50x50" alt="Кэт энерджи" width="50"
+      <img class="page-header__logo-image" src="https://via.placeholder.com/150x50" alt="Кэт энерджи" width="150"
         height="50">
-    </a>
-    <a class="page-header__logo-title logo-title">
-      <img class="page-header__logo-title-image logo-title__image" src="https://via.placeholder.com/150x50"
-        alt="Кэт энерджи" width="150" height="50">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav-wrapper">
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>Подбор программы</a>
+            <a class="site-list__link">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -76,7 +72,7 @@
         <input type="checkbox" name="vitamin" value="vitamin">Витамины<br>
       </fieldset>
 
-      <input class="button button--green button--order" type="submit">Отправить заявку</button>
+      <input class="button button--order" type="submit">Отправить заявку</input>
 
       <small class="stats__legend stats__legend--bottom">
         <sup>*</sup> — Обязательные поля
