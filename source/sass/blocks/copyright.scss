@@ -1,7 +1,7 @@
 //Import Variables
-@import './variables.scss';
+@import "./variables.scss";
 //Import Mixins
-@import './mixins.scss';
+@import "./mixins.scss";
 
 .copyright {
   @include set-font-style(16px, 1);

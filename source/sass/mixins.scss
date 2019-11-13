@@ -6,18 +6,21 @@
 @mixin set-font-face-arial() {
   $font-family: "Arial", sans-serif;
   $font-weight: normal;
+
   @include set-font-face($font-weight, $font-family);
 }
 
 @mixin set-font-face-oswald-medium() {
   $font-family: "Oswald";
   $font-weight: 500;
+
   @include set-font-face($font-weight, $font-family);
 }
 
 @mixin set-font-face-oswald-regular() {
   $font-family: "Oswald";
   $font-weight: 400;
+
   @include set-font-face($font-weight, $font-family);
 }
 

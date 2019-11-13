@@ -1,31 +1,31 @@
 //Import Fonts
-@import './fonts.scss';
+@import "./fonts.scss";
 //Import Blocks
-@import './blocks/advantages.scss';
-@import './blocks/catalog.scss';
-@import './blocks/contacts.scss';
-@import './blocks/copyright.scss';
-@import './blocks/example.scss';
-@import './blocks/info-block.scss';
-@import './blocks/info-list.scss';
-@import './blocks/logo-title.scss';
-@import './blocks/main-nav.scss';
-@import './blocks/map.scss';
-@import './blocks/more-block.scss';
-@import './blocks/other-block.scss';
-@import './blocks/page-footer.scss';
-@import './blocks/page-header.scss';
-@import './blocks/page-main.scss';
-@import './blocks/present.scss';
-@import './blocks/product-catalog.scss';
-@import './blocks/progression.scss';
-@import './blocks/promo-block.scss';
-@import './blocks/site-list.scss';
-@import './blocks/social.scss';
+@import "./blocks/advantages.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/example.scss";
+@import "./blocks/info-block.scss";
+@import "./blocks/info-list.scss";
+@import "./blocks/logo-title.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/map.scss";
+@import "./blocks/more-block.scss";
+@import "./blocks/other-block.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/present.scss";
+@import "./blocks/product-catalog.scss";
+@import "./blocks/progression.scss";
+@import "./blocks/promo-block.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/social.scss";
 //Import Variables
-@import './variables.scss';
+@import "./variables.scss";
 //Import Mixins
-@import './mixins.scss';
+@import "./mixins.scss";
 
 body {
   padding: 0;
@@ -51,7 +51,6 @@ body {
   h2,
   h1 {
     color: $primary-header-color;
-    ;
   }
 
   .button {

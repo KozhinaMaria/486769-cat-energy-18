@@ -7,18 +7,18 @@
     padding: 20px 0;
   }
 
-  .social__item {}
-
   .social__link {
     opacity: 0.5;
 
     &--vkontakte {
       margin-right: 34px;
+
       @include set-link-as-icon($icon-vk-url, 22px, 12px);
     }
 
     &--instagram {
       margin-right: 36px;
+
       @include set-link-as-icon($icon-insta-url, 23px, 23px);
     }
 

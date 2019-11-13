@@ -1,14 +1,9 @@
 //Import Variables
-@import './variables.scss';
+@import "./variables.scss";
 //Import Mixins
-@import './mixins.scss';
+@import "./mixins.scss";
 
 .catalog {
-
-  .catalog__wrapper {}
-
-  .catalog__list {}
-
   .catalog__item {
     padding: 22px;
     margin: 20px 0;
@@ -21,8 +16,6 @@
     @include set-font-style(24px, 1.29);
     text-transform: uppercase;
   }
-
-  .catalog__details {}
 
   .catalog__description {
     text-align: left;

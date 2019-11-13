@@ -1,7 +1,7 @@
 //Import Variables
-@import './variables.scss';
+@import "./variables.scss";
 //Import Mixins
-@import './mixins.scss';
+@import "./mixins.scss";
 
 .product-catalog {
   border-top: 1px solid $primary-border-color;
@@ -44,6 +44,7 @@
 
   .product-catalog__order-btn {
     margin: 20px auto;
+
     @include set-link-as-btn;
   }
 }
