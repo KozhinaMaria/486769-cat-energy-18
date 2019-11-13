@@ -1,0 +1,15 @@
+//Import Variables
+@import './variables.scss';
+//Import Mixins
+@import './mixins.scss';
+
+.copyright {
+  @include set-font-style(16px, 1);
+
+  .copyright__logo {
+    border: none;
+    color: transparent;
+    font-size: 25px;
+    background: $htmlacademy-url no-repeat;
+  }
+}

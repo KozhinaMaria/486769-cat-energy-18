@@ -1,0 +1,49 @@
+//Import Variables
+@import './variables.scss';
+//Import Mixins
+@import './mixins.scss';
+
+.product-catalog {
+  border-top: 1px solid $primary-border-color;
+
+  .product-catalog__title,
+  .product-catalog__name,
+  .product-catalog__order-btn {
+    @include set-font-face-oswald-regular;
+  }
+
+  .product-catalog__title {
+    @include set-font-style(36px, 1.67);
+  }
+
+  .product-catalog__name,
+  .product-catalog__order-btn {
+    @include set-font-style(16px, 1.25);
+    text-transform: uppercase;
+  }
+
+  .product-catalog__info {
+    @include set-font-style(12px, 1.33);
+    width: 100%;
+  }
+
+  .product-catalog__item,
+  .product-catalog__title {
+    padding: 0 20px;
+  }
+
+  .product-catalog__item,
+  .product-catalog__more-block,
+  .product-catalog__other {
+    border-top: 1px solid $primary-border-color;
+  }
+
+  .product-catalog__more-block {
+    padding: 20px;
+  }
+
+  .product-catalog__order-btn {
+    margin: 20px auto;
+    @include set-link-as-btn;
+  }
+}

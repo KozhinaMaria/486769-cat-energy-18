@@ -1,0 +1,21 @@
+//Import Variables
+@import './variables.scss';
+//Import Mixins
+@import './mixins.scss';
+
+.promo-block {
+  $color: #ffffff;
+
+  @include set-font-face-oswald-regular;
+  color: $color;
+
+  .promo-block__banner-image {
+    width: 100%;
+  }
+
+  .promo-block__program-btn {
+    margin: 0 auto;
+
+    @include set-link-as-btn;
+  }
+}

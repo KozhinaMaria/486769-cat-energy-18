@@ -1,0 +1,73 @@
+//Import Variables
+@import './variables.scss';
+//Import Mixins
+@import './mixins.scss';
+
+.catalog {
+
+  .catalog__wrapper {}
+
+  .catalog__list {}
+
+  .catalog__item {
+    padding: 22px;
+    margin: 20px 0;
+    background-color: #f2f2f2;
+    color: $primary-color;
+  }
+
+  .catalog__title {
+    @include set-font-face-oswald-regular;
+    @include set-font-style(24px, 1.29);
+    text-transform: uppercase;
+  }
+
+  .catalog__details {}
+
+  .catalog__description {
+    text-align: left;
+  }
+
+  .catalog__picture {
+    width: 50px;
+    height: 51px;
+    text-align: center;
+    background-color: $secondary-color;
+    border-radius: 50%;
+  }
+
+  .catalog__image {
+    &--slim {
+      width: 35px;
+      height: 49px;
+    }
+
+    &--pro {
+      width: 67px;
+      height: 28px;
+
+      margin: 20% -30%;
+    }
+  }
+
+  .catalog__actions {
+    @include set-font-face-oswald-regular;
+    @include set-font-style(16px, 1);
+    text-transform: uppercase;
+    color: $primary-header-color;
+
+    border-top: 1px solid #dedede;
+    padding-top: 20px;
+  }
+
+  .catalog__link-name::after {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 12px;
+    margin-left: 12px;
+
+    background: $icon-right-arrow-long-url no-repeat;
+    background-size: 25px 12px;
+  }
+}

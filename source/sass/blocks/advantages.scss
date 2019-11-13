@@ -1,1 +1,22 @@
+//Import Variables
+@import './variables.scss';
+//Import Mixins
+@import './mixins.scss';
 
+.advantages {
+  .advantages__title {
+    @include set-font-face-oswald-regular;
+    @include set-font-style(36px, 1.67);
+  }
+
+  .advantages__picture {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: $secondary-color;
+  }
+
+  .advantages__image {
+    margin-top: 10%;
+  }
+}
