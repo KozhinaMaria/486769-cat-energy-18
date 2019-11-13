@@ -1,32 +1,39 @@
-//Import Variables
-@import "./variables.scss";
-
 .more-block {
   text-align: center;
+}
 
-  .more-block__plus {
-    margin: 0 auto;
-    opacity: 0.3;
+.more-block__plus {
+  display: block;
+  width: 25px;
+  height: 19px;
+  margin: 0 auto;
+  opacity: 0.3;
+  color: transparent;
+  border: none;
+  background: url("../img/icon-plus-mobile.svg") no-repeat;
+}
 
-    @include set-link-as-icon($icon-plus-mobile-url);
-  }
+.more-block__subtitle {
+  font-size: 12px;
+  line-height: 1.33;
+}
 
-  .more-block__subtitle {
-    @include set-font-style(12px, 1.33);
-  }
+.more-block__show-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.5em;
+  background-color: #f2f2f2;
+  color: #444444;
+}
 
-  .more-block__show-btn,
-  .more-block__title {
-    text-transform: uppercase;
+.more-block__show-btn,
+.more-block__title {
+  text-transform: uppercase;
 
-    @include set-font-face-oswald-regular;
-    @include set-font-style(16px, 1.25);
-  }
-
-  .more-block__show-btn {
-    margin: 0 auto;
-    margin-top: 20px;
-
-    @include set-link-as-btn(#f2f2f2, #444444);
-  }
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }

@@ -1,15 +1,13 @@
-//Import Variables
-@import "./variables.scss";
-//Import Mixins
-@import "./mixins.scss";
-
 .copyright {
-  @include set-font-style(16px, 1);
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+}
 
-  .copyright__logo {
-    border: none;
-    color: transparent;
-    font-size: 25px;
-    background: $htmlacademy-url no-repeat;
-  }
+.copyright__logo {
+  border: none;
+  color: transparent;
+  font-size: 25px;
+  background: url("../../img/htmlacademy.svg") no-repeat;
 }

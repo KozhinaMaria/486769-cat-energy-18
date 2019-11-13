@@ -1,29 +1,34 @@
-.social {
-  .social__list {
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid #dedede;
-    border-bottom: 1px solid #dedede;
-    padding: 20px 0;
+.social__list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  padding: 20px 0;
+}
+
+.social__link {
+  opacity: 0.5;
+  display: block;
+  border: none;
+  color: transparent;
+
+  &--vkontakte {
+    margin-right: 34px;
+    width: 22px;
+    height: 12px;
+    background: url("../img/icon-vk.svg") no-repeat;
   }
 
-  .social__link {
-    opacity: 0.5;
+  &--instagram {
+    margin-right: 36px;
+    width: 23px;
+    height: 23px;
+    background: url("../img/icon-insta.svg") no-repeat;
+  }
 
-    &--vkontakte {
-      margin-right: 34px;
-
-      @include set-link-as-icon($icon-vk-url, 22px, 12px);
-    }
-
-    &--instagram {
-      margin-right: 36px;
-
-      @include set-link-as-icon($icon-insta-url, 23px, 23px);
-    }
-
-    &--facebook {
-      @include set-link-as-icon($icon-fb-url, 10px, 19px);
-    }
+  &--facebook {
+    width: 10px;
+    height: 19px;
+    background: url("../img/icon-fb.svg") no-repeat;
   }
 }

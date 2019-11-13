@@ -1,21 +1,22 @@
-//Import Variables
-@import "./variables.scss";
-//Import Mixins
-@import "./mixins.scss";
-
 .promo-block {
-  $color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
 
-  @include set-font-face-oswald-regular;
-  color: $color;
+.promo-block__banner-image {
+  width: 100%;
+}
 
-  .promo-block__banner-image {
-    width: 100%;
-  }
+.promo-block__program-btn {
+  display: block;
+  margin: 20px auto;
 
-  .promo-block__program-btn {
-    margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 2.5em;
 
-    @include set-link-as-btn;
-  }
+  background-color: $secondary-color;
+  color: #ffffff;
 }

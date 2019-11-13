@@ -1,66 +1,63 @@
-//Import Variables
-@import "./variables.scss";
-//Import Mixins
-@import "./mixins.scss";
+.catalog__item {
+  padding: 22px;
+  margin: 20px 0;
+  background-color: #f2f2f2;
+  color: #444444;
+}
 
-.catalog {
-  .catalog__item {
-    padding: 22px;
-    margin: 20px 0;
-    background-color: #f2f2f2;
-    color: $primary-color;
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+
+.catalog__description {
+  text-align: left;
+}
+
+.catalog__picture {
+  width: 50px;
+  height: 51px;
+  text-align: center;
+  background-color: $secondary-color;
+  border-radius: 50%;
+}
+
+.catalog__image {
+  &--slim {
+    width: 35px;
+    height: 49px;
   }
 
-  .catalog__title {
-    @include set-font-face-oswald-regular;
-    @include set-font-style(24px, 1.29);
-    text-transform: uppercase;
+  &--pro {
+    width: 67px;
+    height: 28px;
+
+    margin: 20% -30%;
   }
+}
 
-  .catalog__description {
-    text-align: left;
-  }
+.catalog__actions {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #111111;
 
-  .catalog__picture {
-    width: 50px;
-    height: 51px;
-    text-align: center;
-    background-color: $secondary-color;
-    border-radius: 50%;
-  }
+  border-top: 1px solid #dedede;
+  padding-top: 20px;
+}
 
-  .catalog__image {
-    &--slim {
-      width: 35px;
-      height: 49px;
-    }
+.catalog__link-name::after {
+  display: inline-block;
+  content: "";
+  width: 25px;
+  height: 12px;
+  margin-left: 12px;
 
-    &--pro {
-      width: 67px;
-      height: 28px;
-
-      margin: 20% -30%;
-    }
-  }
-
-  .catalog__actions {
-    @include set-font-face-oswald-regular;
-    @include set-font-style(16px, 1);
-    text-transform: uppercase;
-    color: $primary-header-color;
-
-    border-top: 1px solid #dedede;
-    padding-top: 20px;
-  }
-
-  .catalog__link-name::after {
-    display: inline-block;
-    content: "";
-    width: 25px;
-    height: 12px;
-    margin-left: 12px;
-
-    background: $icon-right-arrow-long-url no-repeat;
-    background-size: 25px 12px;
-  }
+  background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  background-size: 25px 12px;
 }
