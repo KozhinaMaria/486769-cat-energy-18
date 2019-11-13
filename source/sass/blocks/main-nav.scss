@@ -1,11 +1,27 @@
+//Import Variables
+@import "./variables.scss";
+
 .main-nav {
+  width: 100%;
+  margin-top: 15px;
+
+  &:hover {
+    .main-nav__toggle {
+      @include set-link-as-icon($icon-close-url, 25px, 19px);
+    }
+
+    .main-nav__wrapper {
+      display: block;
+    }
+  }
+
   .main-nav__wrapper {
     display: none;
   }
 
   .main-nav__toggle {
-    background: $icon-mobile-menu-url no-repeat;
-    border: none;
-    color: transparent;
+    float: right;
+
+    @include set-link-as-icon($icon-mobile-menu-url, 25px, 19px);
   }
 }
