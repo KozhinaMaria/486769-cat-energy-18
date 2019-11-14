@@ -1,0 +1,22 @@
+.promo-block {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.promo-block__banner-image {
+  width: 100%;
+}
+
+.promo-block__program-btn {
+  display: block;
+  margin: 20px auto;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 2.5em;
+
+  background-color: $secondary-color;
+  color: #ffffff;
+}
