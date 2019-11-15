@@ -1,3 +1,16 @@
-.info-block {
-  position: unset;
+.info-block__value {
+  padding: 23px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  border-radius: 3px;
+  border: solid 1px #cdcdcd;
+}
+
+.info-block__text {
+  font-size: 12px;
+  line-height: 1;
 }

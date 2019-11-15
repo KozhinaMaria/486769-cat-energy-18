@@ -1,3 +1,31 @@
 .example {
-  position: unset;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.example__progression {
+  padding-bottom: 20px;
+}
+
+.example__title,
+.example__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 1.67;
+}
+
+.example__subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.example__description {
+  font-size: 14px;
+  line-height: 1.29;
 }
