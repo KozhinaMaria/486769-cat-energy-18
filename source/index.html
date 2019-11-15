@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <header class="page-header">
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="./img/logo-mobile.svg" alt="Кэт энерджи">
@@ -160,7 +159,7 @@
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
               Санкт-Петербург</p>
           </div>
-          <div class="map__place"></div>
+          <div id="map" class="map__place"></div>
         </div>
       </section>
 
@@ -189,6 +188,38 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function initMap() {
+      var mapElement = document.getElementById('map');
+      var location = {
+        lat: 59.938776,
+        lng: 30.323052
+      };
+      var map = new google.maps.Map(
+        mapElement, {
+          zoom: 17,
+          center: location,
+        });
+
+      var icon = {
+        url: "./img/map-pin.png",
+        scaledSize: new google.maps.Size(55, 53),
+        anchor: new google.maps.Point(40, 40)
+      };
+
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        icon: icon,
+        title: "bla"
+      });
+    }
+
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2lNNalCT6plyeFUbmJVQ8qo-Fle-9vHs&language=ru&callback=initMap">
+  </script>
 </body>
 
 </html>
