@@ -33,77 +33,89 @@
 
   <main class="page-main">
     <form class="form-program" action="https://echo.htmlacademy.ru">
-      <div class="form-program__wrapper">
-        <h2 class="form-program__title">Подбор программы</h2>
-        <p class="form-program__subtitle">Заполните анкету и мы подберем
-          программу питания для вашего кота</p>
-      </div>
+      <p class="form-program__title">Подбор программы</p>
+      <p class="form-program__subtitle">Заполните анкету и мы подберем
+        программу питания для вашего кота</p>
 
       <fieldset class="form-program__cat-info fieldset-block">
         <label class="fieldset-block__label">
-          Имя:<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="text" id="catName"
-            name="catName" value="Барсик">
+          Имя:<sup class="required-asterix">*</sup> <input class="fieldset-block__value fieldset-block__value--text"
+            type="text" id="catName" name="catName" value="Барсик">
         </label>
         <label class="fieldset-block__label">
-          Вес (кг):<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="text" id="catWeight"
-            name="catWeight" value="7">
+          Вес (кг):<sup class="required-asterix">*</sup> <input
+            class="fieldset-block__value fieldset-block__value--text" type="text" id="catWeight" name="catWeight"
+            value="7">
         </label>
         <label class="fieldset-block__label">
-          Возраст (лет): <input class="fieldset-block__value" type="text" id="catAge" name="catAge" value="7">
+          Возраст (лет): <input class="fieldset-block__value fieldset-block__value--text" type="text" id="catAge"
+            name="catAge" value="7">
         </label>
 
       </fieldset>
 
       <fieldset class="form-program__checkbox fieldset-block">
         <label class="fieldset-block__label">
-          <input class="fieldset-block__value" type="radio" name="goal" value="loseWeight" checked> Похудение
+          <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal" value="loseWeight"
+            checked> Похудение
         </label>
         <label class="fieldset-block__label">
-          <input class="fieldset-block__value" type="radio" name="goal" value="putonWeight"> Набор массы
+          <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal"
+            value="putonWeight"> Набор
+          массы
         </label>
         <label class="fieldset-block__label">
-          <input class="fieldset-block__value" type="radio" name="goal" value="other"> Не знаю (Нужен ваш совет)
+          <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal" value="other"> Не
+          знаю
+          (Нужен ваш совет)
         </label>
       </fieldset>
 
       <fieldset class="form-program__user-contacts user-contacts fieldset-block">
         <legend class="fieldset-block__legend">Контактные данные (владельца кота)</legend>
+        <div class=" fieldset-block__legend-line-after"></div>
         <label class="fieldset-block__label">
-          E-mail:<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="email" name="email"
-            value="kuklachev@gmail.com">
+          E-mail:<sup class="required-asterix">*</sup> <input class="fieldset-block__value fieldset-block__value--text"
+            type="email" name="email" value="kuklachev@gmail.com">
         </label>
         <label class="fieldset-block__label">
-          Телефон:<sup class="required-asterix">*</sup> <input class="fieldset-block__value" type="text" name="phone"
-            value="8 (960) 900-60-90">
+          Телефон:<sup class="required-asterix">*</sup> <input class="fieldset-block__value fieldset-block__value--text"
+            type="text" name="phone" value="8 (960) 900-60-90">
         </label>
       </fieldset>
 
       <fieldset class="form-program__comments fieldset-block">
         <legend class="fieldset-block__legend">Комментарий</legend>
-        <textarea class="fieldset-block__textareas" rows="4" cols="50" name="comment">
+        <div class=" fieldset-block__legend-line-after"></div>
+        <textarea class="fieldset-block__textareas fieldset-block__value--textarea" rows="4" cols="50" name="comment">
             Расскажите обо всех повадках кота
         </textarea>
       </fieldset>
 
       <fieldset class="form-program__other fieldset-block">
         <legend class="fieldset-block__legend">Дополнительно</legend>
+        <div class=" fieldset-block__legend-line-after"></div>
         <label class="fieldset-block__label">
-          <input class="fieldset-block__value" type="checkbox" name="composition" value="sweetener" checked>
+          <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
+            value="sweetener" checked>
           Сахарозаменитель
         </label>
         <label class="fieldset-block__label">
-          <input class="fieldset-block__value" type="checkbox" name="composition" value="water">Питьевая вода
+          <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
+            value="water">Питьевая вода
         </label>
         <label class="fieldset-block__label">
-          <input class="fieldset-block__value" type="checkbox" name="composition" value="milk"> Молоко
+          <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
+            value="milk"> Молоко
         </label>
         <label class="fieldset-block__label">
-          <input class="fieldset-block__value" type="checkbox" name="composition" value="vitamin"> Витамины
+          <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
+            value="vitamin"> Витамины
         </label>
       </fieldset>
 
-      <input class="button button--order" type="submit">Отправить заявку</input>
-      <small class="stats__legend stats__legend--bottom">
+      <input class="form-program__order-btn button" type="submit" value="Отправить заявку"></input>
+      <small class="form-program__legend form-program__legend--bottom">
         <sup class="required-asterix">*</sup> — Обязательные поля
       </small>
     </form>
