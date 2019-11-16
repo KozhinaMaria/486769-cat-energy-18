@@ -1,0 +1,46 @@
+.form-program {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #111111;
+
+  border-top: 1px solid $primary-border-color;
+
+  .form-program__subtitle,
+  .form-program__title,
+  fieldset:not(.form-program__checkbox) {
+    padding: 0 20px;
+  }
+}
+
+.form-program__legend {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.form-program__title {
+  font-size: 36px;
+  line-height: 1.67;
+}
+
+.form-program__subtitle {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+
+.form-program__order-btn {
+  display: block;
+  margin: 20px auto;
+
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 2.5em;
+  font-size: 16px;
+
+  background-color: $secondary-color;
+  color: #ffffff;
+}

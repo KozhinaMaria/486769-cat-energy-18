@@ -1,20 +1,10 @@
 .main-nav {
   width: 100%;
   margin-top: 15px;
-
-  &:hover {
-    .main-nav__toggle {
-      background: url("../img/icon-close.svg") no-repeat;
-    }
-
-    .main-nav__wrapper {
-      display: block;
-    }
-  }
 }
 
 .main-nav__wrapper {
-  display: none;
+  display: block;
 }
 
 .main-nav__toggle {
@@ -27,5 +17,5 @@
   height: 19px;
   color: transparent;
   border: none;
-  background: url("../img/icon-mobile-menu.svg") no-repeat;
+  background: url("../img/icon-close.svg") no-repeat;
 }

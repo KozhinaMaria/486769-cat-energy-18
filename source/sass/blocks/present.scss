@@ -1,3 +1,16 @@
 .present {
-  position: unset;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.present__present-image {
+  width: 56px;
+  height: 61px;
+  background: url("../img/icon-gift.svg") no-repeat;
+}
+
+.present__title {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
 }
