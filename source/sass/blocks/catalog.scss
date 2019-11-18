@@ -5,7 +5,7 @@
 
 .catalog__item {
   padding: 22px;
-  margin: 20px 0;
+  margin: 20px 10px;
   background-color: #f2f2f2;
   color: #444444;
 }
@@ -70,4 +70,62 @@
 
   background: url("../img/icon-right-arrow-long.svg") no-repeat;
   background-size: 25px 12px;
+}
+
+.catalog__details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__title {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__actions {
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .catalog__picture {
+    width: 200px;
+    height: 200px;
+  }
+
+  .catalog__picture {
+    order: 2;
+  }
+
+  .catalog__image {
+    &--slim {
+      width: 140px;
+      height: 195px;
+    }
+
+    &--pro {
+      width: 268px;
+      height: 113px;
+
+      margin: 20% -30%;
+    }
+  }
+
+  .catalog__description,
+  .catalog__title {
+    justify-content: flex-start;
+    order: 1;
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+  }
 }
