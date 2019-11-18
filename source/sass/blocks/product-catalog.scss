@@ -5,6 +5,7 @@
 
 .product-catalog {
   border-top: 1px solid $primary-border-color;
+  min-height: 210px;
 }
 
 .product-catalog__title,
@@ -58,4 +59,45 @@
 
   background-color: $secondary-color;
   color: #ffffff;
+}
+
+
+.product-catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 210px;
+}
+
+.product-catalog__info-wrapper {
+  min-width: 160px;
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .product-catalog__info-wrapper {
+    background-color: #f3f3f3;
+  }
+
+  .product-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 431px;
+    justify-content: space-around;
+  }
+
+  .product-catalog__item {
+    width: 40%;
+  }
+
+  .product-catalog__more-block,
+  .product-catalog__item {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-catalog__item {
+    width: 20%;
+  }
 }
