@@ -11,8 +11,8 @@
 }
 
 .copyright__logo {
-  border: none;
+  display: flex;
+  height: 34px;
   color: transparent;
-  font-size: 25px;
   background: url("../../img/htmlacademy.svg") no-repeat;
 }

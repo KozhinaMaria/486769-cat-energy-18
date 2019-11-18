@@ -1,21 +1,47 @@
 .main-nav {
   width: 100%;
-  margin-top: 15px;
 }
 
-.main-nav__wrapper {
-  display: block;
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  min-height: 65px;
+  list-style: none;
 }
 
 .main-nav__toggle {
-  display: block;
   position: absolute;
-  top: 20px;
   right: 20px;
-  float: right;
+  top: 20px;
   width: 25px;
   height: 19px;
   color: transparent;
   border: none;
   background: url("../img/icon-close.svg") no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+  }
+
+  .main-nav__wrapper {
+    width: 565px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+
+  }
+
+  .site-list {
+    min-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 960px;
+  }
 }
