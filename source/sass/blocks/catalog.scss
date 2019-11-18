@@ -11,6 +11,8 @@
 }
 
 .catalog__title {
+  flex-grow: 1;
+  margin-left: 20px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -77,11 +79,6 @@
   flex-wrap: wrap;
 }
 
-.catalog__title {
-  flex-grow: 1;
-  margin-left: 20px;
-}
-
 @media (min-width: $tablet-width) {
   .catalog__actions {
     border: none;
@@ -92,9 +89,6 @@
   .catalog__picture {
     width: 200px;
     height: 200px;
-  }
-
-  .catalog__picture {
     order: 2;
   }
 
