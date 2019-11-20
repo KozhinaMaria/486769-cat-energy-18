@@ -16,6 +16,7 @@
 }
 
 .product-catalog__title {
+  padding: 0 20px;
   font-size: 36px;
   line-height: 1.67;
 }
@@ -31,10 +32,6 @@
   font-size: 12px;
   line-height: 1.33;
   width: 100%;
-}
-
-.product-catalog__title {
-  padding: 0 20px;
 }
 
 .product-catalog__item,
@@ -85,31 +82,31 @@
 
   .product-catalog__image {
     &--chicken-small {
-      content: url(../../img/chicken-small-tablet@1x.png);
+      content: url("../../img/chicken-small-tablet@1x.png");
     }
 
     &--chicken {
-      content: url(../../img/chicken-big-tablet@1x.png);
+      content: url("../../img/chicken-big-tablet@1x.png");
     }
 
     &--fish-small {
-      content: url(../../img/fish-small-tablet@1x.png);
+      content: url("../../img/fish-small-tablet@1x.png");
     }
 
     &--fish {
-      content: url(../../img/fish-big-tablet@1x.png);
+      content: url("../../img/fish-big-tablet@1x.png");
     }
 
     &--buckwheat-small {
-      content: url(../../img/buckwheat-small-tablet@1x.png);
+      content: url("../../img/buckwheat-small-tablet@1x.png");
     }
 
     &--buckwheat {
-      content: url(../../img/buckwheat-big-tablet@1x.png);
+      content: url("../../img/buckwheat-big-tablet@1x.png");
     }
 
     &--rice {
-      content: url(../../img/rice-small-tablet@1x.png);
+      content: url("../../img/rice-small-tablet@1x.png");
     }
   }
 
@@ -143,39 +140,37 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .product-catalog__item {
-    width: 20%;
     width: 245px;
   }
 
   .product-catalog__image {
     &--chicken-small {
-      content: url(../../img/chicken-small-desktop@1x.png);
+      content: url("../../img/chicken-small-desktop@1x.png");
     }
 
     &--chicken {
-      content: url(../../img/chicken-big-desktop@1x.png);
+      content: url("../../img/chicken-big-desktop@1x.png");
     }
 
     &--fish-small {
-      content: url(../../img/fish-small-desktop@1x.png);
+      content: url("../../img/fish-small-desktop@1x.png");
     }
 
     &--fish {
-      content: url(../../img/fish-big-desktop@1x.png);
+      content: url("../../img/fish-big-desktop@1x.png");
     }
 
     &--buckwheat-small {
-      content: url(../../img/buckwheat-small-desktop@1x.png);
+      content: url("../../img/buckwheat-small-desktop@1x.png");
     }
 
     &--buckwheat {
-      content: url(../../img/buckwheat-big-desktop@1x.png);
+      content: url("../../img/buckwheat-big-desktop@1x.png");
     }
 
     &--rice {
-      content: url(../../img/rice-small-desktop@1x.png);
+      content: url("../../img/rice-small-desktop@1x.png");
     }
   }
 }
