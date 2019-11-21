@@ -4,15 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" /> -->
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="./img/logo-mobile.svg" alt="Кэт энерджи">
-    </a>
+  <header class="page-header container">
+    <a class="page-header__logo"></a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
@@ -33,7 +32,7 @@
 
   <main class="page-main">
 
-    <section class="promo-block">
+    <section class="promo-block container">
       <div class="promo-block__wrapper">
         <h2 class="visually-hidden">Баннер и слоган Кэт Энерджи</h2>
         <img class="promo-block__banner-image" src="./img/index-background-mobile@1x.jpg" alt="Кэт энерджи баннер">
@@ -45,7 +44,7 @@
       </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog container">
       <h2 class="visually-hidden">Наш каталог программ</h2>
       <div class="catalog__wrapper">
         <ul class="catalog__list">
@@ -67,7 +66,7 @@
           <li class="catalog__item">
             <div class="catalog__details">
               <p class="catalog__picture">
-                <img class="catalog__image catalog__image--slim" src="./img/icon-cat-pro.svg" alt="Кот Pro">
+                <img class="catalog__image catalog__image--pro" src="./img/icon-cat-pro.svg" alt="Кот Pro">
               </p>
               <h3 class="catalog__title">Набор массы</h3>
               <p class="catalog__description">Заработать авторитет среди дворовых котов и даже собак?
@@ -81,7 +80,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages container">
       <div class="advantages__wrapper">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
@@ -90,24 +89,28 @@
               <img class="advantages__image" src="./img/advantage-leaf@1x.png" alt="Листок">
             </p>
             <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
+            <p class="advantages__number">1</p>
           </li>
           <li class="advantages__item">
             <p class="advantages__picture">
               <img class="advantages__image" src="./img/advantage-powder@1x.png" alt="Порошок">
             </p>
             <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <p class="advantages__number">2</p>
           </li>
           <li class="advantages__item">
             <p class="advantages__picture">
               <img class="advantages__image" src="./img/advantage-dining@1x.png" alt="Вилка и Нож">
             </p>
             <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <p class="advantages__number">3</p>
           </li>
           <li class="advantages__item">
             <p class="advantages__picture">
               <img class="advantages__image" src="./img/advantage-clock@1x.png" alt="Часы">
             </p>
             <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages__number">4</p>
           </li>
         </ul>
       </div>
@@ -149,23 +152,22 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <section class="page-footer__map map">
-        <div class="map__wrapper">
-          <div class="map__contacts contacts">
-            <p class="contacts__text">приглашаем
-              к сотрудничеству
-              дилеров!</p>
-            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
-              Санкт-Петербург</p>
-          </div>
-          <div id="map" class="map__place"></div>
-        </div>
-      </section>
 
-      <div class="page-footer__logo-title logo-title">
-        <img class="page-footer__logo-title-image logo-title__image" src="./img/logo-footer.svg" alt="Кэт энерджи"
-          width="150" height="50">
+    <section class="page-footer__map map">
+      <div class="map__wrapper">
+        <div class="map__contacts contacts">
+          <p class="contacts__text">приглашаем
+            к сотрудничеству
+            дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            Санкт-Петербург</p>
+        </div>
+        <div id="map" class="map__place"></div>
+      </div>
+    </section>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo-place">
+        <a class="page-footer__logo" href="#">A</a>
       </div>
       <div class="page-footer__social social">
         <b class="social__title visually-hidden">Давайте дружить!</b>
@@ -183,8 +185,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="button copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
