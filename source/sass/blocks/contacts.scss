@@ -1,4 +1,7 @@
 .contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #ffffff;
   padding: 25px;
 }
@@ -15,4 +18,5 @@
   font-size: 14px;
   line-height: 1.43;
   color: #444444;
+  text-align: end;
 }

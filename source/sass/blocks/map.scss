@@ -1,4 +1,23 @@
-.map__place {
+.map__wrapper {
+  position: relative;
+}
+
+.map__place.map__place {
   height: 400px;
   width: 100%;
+}
+
+.map__contacts {
+  min-height: 115px;
+  min-width: 320px;
+}
+
+@media (min-width: $desktop-width) {
+  .map__contacts {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 10%;
+    max-width: 500px;
+  }
 }
