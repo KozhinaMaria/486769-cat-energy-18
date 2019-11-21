@@ -52,7 +52,6 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .example {
     background: #ffffff;
@@ -64,24 +63,40 @@
     flex-wrap: wrap;
   }
 
+  .example__details-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .example__info-wrapper {
     flex-grow: 1;
   }
 
+  .example__title {
+    text-align: left;
+  }
+
   .example__subtitle {
     min-width: 40px;
-    text-align: right;
-    flex-basis: 175px;
+    text-align: center;
+  }
+
+  .example__description {
+    min-height: 64px;
   }
 
   .example__result-wrapper {
-    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    flex-grow: 1;
+    background-image: linear-gradient(white 30%, #eaeaea 10%); //f3f3f3
   }
 
   .example__progression {
+    position: absolute;
+    bottom: 10px;
     flex-grow: 1;
   }
 
@@ -94,9 +109,9 @@
   }
 
   .example__picture {
-
     display: flex;
     overflow: hidden;
+    padding-bottom: 80px;
 
     &--before {
       width: 340px;
@@ -112,7 +127,69 @@
   .example__image {
     min-height: 500px;
   }
-
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .example__details-wrapper {
+    text-align: center;
+    flex-grow: 1;
+    background-image: linear-gradient(white 30%, #eaeaea 10%);
+  }
+
+  .example__info-wrapper {
+    flex-grow: 1;
+  }
+
+  .example__title {
+    font-size: 60px;
+  }
+
+  .example__subtitle {
+    min-width: 40px;
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  .example__result-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .example__progression {
+    flex-grow: 1;
+  }
+
+  .example__image {
+    content: url(../../img/before-desktop@1x.png);
+
+    &--after {
+      content: url(../../img/after-desktop@1x.png);
+    }
+  }
+
+  .example__picture {
+    display: flex;
+    overflow: hidden;
+
+    &--before {
+      width: 365px;
+    }
+
+    &--after {
+      width: 335px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .example__image {
+    min-height: 500px;
+  }
+}
