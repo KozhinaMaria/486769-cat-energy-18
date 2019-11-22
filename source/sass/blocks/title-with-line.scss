@@ -1,0 +1,38 @@
+.title-with-line {
+  display: flex;
+  align-items: center;
+}
+
+.title-with-line__title {
+  padding: 0 10px;
+  max-width: 178px;
+}
+
+.title-with-line__after {
+  flex-grow: 1;
+  width: 53px;
+  border-top: 3px solid #68b738;
+}
+
+.title-with-line__before {
+  width: 0;
+  border-top: 3px solid #68b738;
+}
+
+@media (min-width: $tablet-width) {
+  .title-with-line__before {
+    width: 53px;
+    border-top: 3px solid #68b738;
+  }
+
+  .title-with-line__title {
+    max-width: none;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-with-line {
+    flex-basis: 100%;
+  }
+}
