@@ -2,20 +2,23 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #ffffff;
+  background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
+  background-position: top 0 center;
 }
 
-
-.promo-block__wrapper {
-  position: relative;
-  min-height: 655px;
+.promo-block__info {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  z-index: 0;
 }
 
-
-.promo-block__banner-image {
-  position: absolute;
-  width: 100%;
+.promo-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
 }
 
 .promo-block__program-btn {
@@ -31,14 +34,7 @@
   color: #ffffff;
 }
 
-.promo-block__intro,
-.promo-block__slogan,
 .promo-block__can-image {
-  position: relative;
-}
-
-.promo-block__can-image {
-  min-height: 280px;
   padding-top: 30px;
   padding-bottom: 3px;
 }
@@ -61,14 +57,28 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .promo-block__banner-image {
-    display: none;
+  .promo-block {
+    background: none;
+  }
+
+  .promo-block__wrapper {
+    flex-basis: 100%;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .promo-block {
+    position: relative;
+  }
+
+  .promo-block__info {
+    width: auto;
+    z-index: 1;
+  }
+
   .promo-block__can-image {
-    order: 2;
+    width: 709px;
+    height: 609px;
     content: url("../../img/index-can-tablet@1x.jpg");
   }
 
@@ -88,27 +98,26 @@
   }
 
   .promo-block__program-btn {
-    order: 1;
-    margin: 50px 115px;
+    position: absolute;
+    left: 115px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .promo-block__wrapper {
-    justify-content: center;
+  .promo-block {
+    background: url("../../img/index-background-desktop@1x.jpg") no-repeat;
+    background-position: top right;
   }
 
-  .promo-block__banner-image {
-    width: 50%;
-    right: 0;
+  .promo-block__wrapper {
+    flex-direction: row;
   }
 
   .promo-block__can-image {
-    position: absolute;
+    margin-top: 0;
+    margin-right: 428px;
     width: 552px;
     height: 499px;
-    right: 350px;
-    top: 150px;
     content: url("../../img/index-can-desktop@1x.png");
   }
 
@@ -122,5 +131,13 @@
   .promo-block__slogan {
     width: 410px;
     margin: 0 100px;
+  }
+
+  .promo-block__program-btn {
+    bottom: 0;
+  }
+
+  .promo-block__info {
+    width: 30%;
   }
 }

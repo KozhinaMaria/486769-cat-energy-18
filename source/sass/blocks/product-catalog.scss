@@ -47,7 +47,8 @@
 
 .product-catalog__order-btn {
   display: block;
-  margin: 20px auto;
+  margin: 20px;
+  flex-basis: 100%;
 
   text-align: center;
   text-decoration: none;
