@@ -1,10 +1,12 @@
 .fieldset-block {
+  padding: 20px;
   border: 0;
   color: #222222;
 }
 
 .fieldset-block__label {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 
   padding-bottom: 13px;
   text-transform: uppercase;
@@ -29,6 +31,7 @@
   vertical-align: middle;
 
   &--text {
+    flex-grow: 1;
     margin-left: 15px;
   }
 
@@ -49,16 +52,8 @@
 }
 
 .fieldset-block__legend {
+  width: 100%;
   padding-bottom: 31px;
   font-size: 24px;
   line-height: 1;
-}
-
-.fieldset-block__legend-line-after {
-  border-top: 3px solid #68b738;
-}
-
-.form-program__checkbox {
-  border-top: 1px solid $primary-border-color;
-  border-bottom: 1px solid $primary-border-color;
 }

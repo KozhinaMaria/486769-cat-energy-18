@@ -1,29 +1,29 @@
 .form-program {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #111111;
-
-  border-top: 1px solid $primary-border-color;
-
-  .form-program__subtitle,
-  .form-program__title,
-  fieldset:not(.form-program__checkbox) {
-    padding: 0 20px;
-  }
 }
 
 .form-program__legend {
+  margin: 0 auto;
+  padding: 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.14;
 }
 
 .form-program__title {
+  padding-left: 30px;
   font-size: 36px;
   line-height: 1.67;
 }
 
 .form-program__subtitle {
+  max-width: 320px;
+  padding-left: 30px;
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
@@ -31,8 +31,8 @@
 
 .form-program__order-btn {
   display: block;
-  margin: 20px auto;
-
+  flex-grow: 1;
+  margin: 0 auto;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-align: center;
@@ -43,4 +43,83 @@
 
   background-color: $secondary-color;
   color: #ffffff;
+}
+
+.form-program__wrapper {
+  &--radio {
+    border-top: 1px solid $primary-border-color;
+    border-bottom: 1px solid $primary-border-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-program {
+    margin: 0 auto;
+  }
+
+  .form-program__wrapper {
+    margin: 0 70px;
+
+    &--radio {
+      border: solid 1px #cdcdcd;
+    }
+  }
+
+  .form-program__other-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-program__footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-program__order-btn {
+    flex-grow: 0;
+  }
+
+  .fieldset-block__label--checkbox {
+    flex-basis: 40%;
+  }
+
+  .form-program__other {
+    display: flex;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .form-program__wrapper--header {
+    flex-basis: 100%;
+  }
+
+  .form-program {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .fieldset-block__label--checkbox {
+    flex-basis: 20%;
+  }
+
+  .form-program__subtitle {
+    max-width: 100%;
+  }
+
+  .form-program__title,
+  .form-program__subtitle,
+  .form-program__user-contacts,
+  .form-program__comments,
+  .form-program__other,
+  .form-program__footer {
+    flex-basis: 100%;
+  }
+
+  .form-program__cat-info,
+  .form-program__checkbox {
+    flex-basis: 30%;
+    flex-grow: 1;
+  }
 }

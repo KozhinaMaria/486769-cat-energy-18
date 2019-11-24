@@ -34,20 +34,21 @@
   width: 100%;
 }
 
-.product-catalog__item,
-.product-catalog__more-block,
-.product-catalog__other {
-  border-top: 1px solid $primary-border-color;
+.product-catalog__more-block {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.product-catalog__more-block,
-.product-catalog__other {
-  padding: 20px;
+.product-catalog__item,
+.product-catalog__more-block {
+  border-top: 1px solid $primary-border-color;
 }
 
 .product-catalog__order-btn {
   display: block;
-  margin: 20px auto;
+  margin: 20px;
+  flex-basis: 100%;
 
   text-align: center;
   text-decoration: none;

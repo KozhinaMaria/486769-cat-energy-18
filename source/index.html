@@ -34,13 +34,15 @@
 
     <section class="promo-block container">
       <div class="promo-block__wrapper">
-        <h2 class="visually-hidden">Баннер и слоган Кэт Энерджи</h2>
-        <img class="promo-block__banner-image" src="./img/index-background-mobile@1x.jpg" alt="Кэт энерджи баннер">
-        <p class="promo-block__intro">Функциональное питание для котов</p>
-        <b class="promo-block__slogan">Занялся собой? Займись котом!</b>
-        <img class="promo-block__can-image" src="./img/index-can-mobile@1x.png" alt="Кэт энерджи еда">
+        <div class="promo-block__info">
+          <h2 class="visually-hidden">Баннер и слоган Кэт Энерджи</h2>
+          <p class="promo-block__intro">Функциональное питание для котов</p>
+          <b class="promo-block__slogan">Занялся собой? Займись котом!</b>
 
+        </div>
+        <img class="promo-block__can-image" src="./img/index-can-mobile@1x.png" alt="Кэт энерджи еда">
         <a href="form.html" class="promo-block__program-btn button">Подобрать программу</a>
+
       </div>
     </section>
 
@@ -116,42 +118,50 @@
       </div>
     </section>
 
-    <section class="example">
+    <section class="example container">
       <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="example__info-block info-block info-block--left">
-          <p class="info-block__value">5 КГ</p>
-          <p class="info-block__text">снижение
-            веса</p>
-        </div>
-        <div class="example__info-block info-block info-block--right">
-          <p class="info-block__value">60 дней</p>
-          <p class="info-block__text">затрачено
-            времени</p>
-        </div>
-
-        <p class="example__subtitle">Затраты на питание: 15 000 руб.</p>
-        <p class="example__picture">
-          <img class="example__image" src="./img/before-mobile@1x.png" alt="Кот">
-        </p>
-
-        <div class="example__progression progression">
-          <p class="progression__text progression__text--before">Было</p>
-          <div class="progression__container">
-            <span class="progression__value">
-            </span>
+        <div class="example__details-wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__info-wrapper">
+            <div class="example__info-block info-block info-block--left">
+              <p class="info-block__value">5 КГ</p>
+              <p class="info-block__text">снижение
+                веса</p>
+            </div>
+            <div class="example__info-block info-block info-block--right">
+              <p class="info-block__value">60 дней</p>
+              <p class="info-block__text">затрачено
+                времени</p>
+            </div>
           </div>
-          <p class="progression__text progression__text--after">Стало</p>
+          <p class="example__subtitle">Затраты на питание: 15 000 руб.</p>
+        </div>
+        <div class="example__result-wrapper">
+          <p class="example__picture example__picture--before">
+            <img class="example__image" src="./img/before-mobile@1x.png" alt="Кот">
+          </p>
+          <p class="example__picture example__picture--after">
+            <img class="example__image example__image--after" src="./img/after-mobile@1x.png" alt="Кот">
+          </p>
+
+          <div class="example__progression progression">
+            <p class="progression__text progression__text--before">Было</p>
+            <div class="progression__container">
+              <span class="progression__value">
+              </span>
+            </div>
+            <p class="progression__text progression__text--after">Стало</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
 
     <section class="page-footer__map map">
       <div class="map__wrapper">
