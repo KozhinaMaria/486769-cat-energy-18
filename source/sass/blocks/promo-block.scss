@@ -1,16 +1,10 @@
 .promo-block {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #ffffff;
   background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
   background-position: top 0 center;
-}
-
-.promo-block__info {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  z-index: 0;
 }
 
 .promo-block__wrapper {
@@ -21,9 +15,18 @@
   flex-basis: 100%;
 }
 
+.promo-block__info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 320px;
+  z-index: 0;
+}
+
 .promo-block__program-btn {
+  width: 245px;
+  height: 52px;
   display: block;
-  margin: 20px auto;
 
   text-align: center;
   text-decoration: none;
@@ -34,14 +37,8 @@
   color: #ffffff;
 }
 
-.promo-block__can-image {
-  padding-top: 30px;
-  padding-bottom: 3px;
-}
-
 .promo-block__intro,
 .promo-block__slogan {
-  padding: 0 40px;
   text-align: center;
   font-family: "Oswald", sans-serif;
   line-height: 1;
@@ -68,15 +65,23 @@
 
 @media (min-width: $tablet-width) {
   .promo-block {
-    position: relative;
+    padding-left: 190px;
+  }
+
+  .promo-block__wrapper {
+    align-items: flex-start;
   }
 
   .promo-block__info {
+    margin-bottom: 53px;
+    order: 1;
     width: auto;
-    z-index: 1;
   }
 
   .promo-block__can-image {
+    order: 2;
+    margin-top: -82px;
+    margin-left: -65px;
     width: 709px;
     height: 609px;
     content: url("../../img/index-can-tablet@1x.jpg");
@@ -86,10 +91,11 @@
   .promo-block__slogan {
     color: #111111;
     text-align: left;
-    padding: 0 115px;
+    //  padding: 0 115px;
   }
 
   .promo-block__intro {
+    margin-bottom: 45px;
     font-size: 60px;
   }
 
@@ -98,24 +104,46 @@
   }
 
   .promo-block__program-btn {
-    position: absolute;
-    left: 115px;
+    order: 1;
+    font-size: 20px;
+    z-index: 1;
+  }
+
+  .promo-block__program-btn.button {
+    width: 245px;
+    height: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo-block {
-    background: url("../../img/index-background-desktop@1x.jpg") no-repeat;
-    background-position: top right;
+    justify-content: start;
+    align-items: flex-start;
+    min-height: 585px;
+    padding-top: 165px;
+    margin-top: -122px;
+    background-image: unset;
+    position: relative;
   }
 
   .promo-block__wrapper {
-    flex-direction: row;
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url(../../img/index-background-desktop@1x.jpg) no-repeat;
+      background-position: top right;
+      height: 720px;
+      width: 100%;
+      z-index: -1;
+    }
   }
 
   .promo-block__can-image {
-    margin-top: 0;
-    margin-right: 428px;
+    position: absolute;
+    right: 328px;
+    top: 230px;
     width: 552px;
     height: 499px;
     content: url("../../img/index-can-desktop@1x.png");
@@ -124,20 +152,22 @@
   .promo-block__intro,
   .promo-block__slogan,
   .promo-block__can-image {
-    padding: 0 20px;
+    //padding: 0 20px;
   }
 
   .promo-block__intro,
   .promo-block__slogan {
-    width: 410px;
-    margin: 0 100px;
+    width: 415px;
+    // margin: 0 100px;
   }
 
-  .promo-block__program-btn {
-    bottom: 0;
+  .promo-block__program-btn.button {
+    width: 245px;
+    height: 52px;
+    // bottom: 0;
   }
 
-  .promo-block__info {
-    width: 30%;
-  }
+  // .promo-block__info {
+  //   width: 30%;
+  // }
 }

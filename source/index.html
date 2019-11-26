@@ -12,8 +12,8 @@
 <body>
   <header class="page-header container">
     <a class="page-header__logo"></a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -30,7 +30,7 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main container">
 
     <section class="promo-block container">
       <div class="promo-block__wrapper">
@@ -38,48 +38,44 @@
           <h2 class="visually-hidden">Баннер и слоган Кэт Энерджи</h2>
           <p class="promo-block__intro">Функциональное питание для котов</p>
           <b class="promo-block__slogan">Занялся собой? Займись котом!</b>
-
         </div>
         <img class="promo-block__can-image" src="./img/index-can-mobile@1x.png" alt="Кэт энерджи еда">
         <a href="form.html" class="promo-block__program-btn button">Подобрать программу</a>
-
       </div>
     </section>
 
     <section class="catalog container">
       <h2 class="visually-hidden">Наш каталог программ</h2>
-      <div class="catalog__wrapper">
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <div class="catalog__details">
-              <p class="catalog__picture">
-                <img class="catalog__image catalog__image--slim" src="./img/icon-cat-slim.svg" alt="Кот Slim">
-              </p>
-              <h3 class="catalog__title">Похудение</h3>
-              <p class="catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-                деревьям?
-                Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            </div>
-            <div class="catalog__actions">
-              <a href="catalog.html" class="catalog__link-name">Каталог SLIM</a>
-            </div>
-          </li>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <div class="catalog__details">
+            <p class="catalog__picture">
+              <img class="catalog__image catalog__image--slim" src="./img/icon-cat-slim.svg" alt="Кот Slim">
+            </p>
+            <h3 class="catalog__title">Похудение</h3>
+            <p class="catalog__description">Ваш кот весит больше собаки и почти утратил способность <br> лазить по
+              деревьям?
+              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          </div>
+          <div class="catalog__actions">
+            <a href="catalog.html" class="catalog__link-name">Каталог SLIM</a>
+          </div>
+        </li>
 
-          <li class="catalog__item">
-            <div class="catalog__details">
-              <p class="catalog__picture">
-                <img class="catalog__image catalog__image--pro" src="./img/icon-cat-pro.svg" alt="Кот Pro">
-              </p>
-              <h3 class="catalog__title">Набор массы</h3>
-              <p class="catalog__description">Заработать авторитет среди дворовых котов и даже собак?
-                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            </div>
-            <div class="catalog__actions">
-              <a href="catalog.html" class="catalog__link-name">Каталог PRO</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <li class="catalog__item">
+          <div class="catalog__details">
+            <p class="catalog__picture">
+              <img class="catalog__image catalog__image--pro" src="./img/icon-cat-pro.svg" alt="Кот Pro">
+            </p>
+            <h3 class="catalog__title">Набор массы</h3>
+            <p class="catalog__description">Заработать авторитет среди дворовых котов и даже собак? <br>
+              Серия Cat Energy Pro поможет вашему коту нарастить <br> необходимые мышцы!</p>
+          </div>
+          <div class="catalog__actions">
+            <a href="catalog.html" class="catalog__link-name">Каталог PRO</a>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section class="advantages container">
@@ -142,7 +138,7 @@
         </div>
         <div class="example__result-wrapper">
           <p class="example__picture example__picture--before">
-            <img class="example__image" src="./img/before-mobile@1x.png" alt="Кот">
+            <img class="example__image" src="./img/before-mobile@1x.png" alt="Кот" width="280" height="230">
           </p>
           <p class="example__picture example__picture--after">
             <img class="example__image example__image--after" src="./img/after-mobile@1x.png" alt="Кот">
@@ -227,6 +223,21 @@
         title: "bla"
       });
     }
+
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
 
   </script>
   <script async defer

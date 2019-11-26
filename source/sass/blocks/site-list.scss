@@ -14,9 +14,13 @@
 .site-list__item {
   height: 65px;
   text-align: center;
-  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
   text-transform: uppercase;
   line-height: 3em;
+
+  &:first-child {
+    border-top: 1px solid #dedede;
+  }
 }
 
 .site-list__link {
@@ -35,5 +39,23 @@
 
   .site-list__item {
     border: none;
+    margin-right: 63px;
+    margin-left: -140px;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    font-size: 20px;
+    line-height: 1.25;
+    color: #ffffff;
+  }
+
+  .site-list__item--active .site-list__link {
+    border-bottom: 2px solid #ffffff;
   }
 }
