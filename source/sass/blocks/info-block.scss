@@ -23,7 +23,7 @@
   margin-top: -7px;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .info-block__value {
     padding: 8px 18px;
     font-size: 30px;
@@ -31,11 +31,19 @@
   }
 
   .info-block__text {
-    font-size: 14px;
-    line-height: 1;
+    br {
+      display: none;
+    }
   }
 
   .info-block--right {
     margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info-block__text {
+    font-size: 14px;
+    line-height: 1;
   }
 }

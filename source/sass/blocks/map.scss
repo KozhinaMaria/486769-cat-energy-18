@@ -3,7 +3,7 @@
 }
 
 .map__place {
-  height: 400px;
+  min-height: 367px;
   width: 100%;
 }
 
@@ -23,5 +23,15 @@
     justify-content: space-around;
     align-items: center;
     padding: 43px 22px;
+  }
+
+  .map__place {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map__place {
+    min-height: 426px;
   }
 }

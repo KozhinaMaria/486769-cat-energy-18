@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f2f2f2;
-  padding: 25px;
+  background-color: #ffffff;
+  //background-color: #f2f2f2;
+  padding: 0 20px;
 }
 
 .contacts__text {
@@ -18,12 +19,12 @@
   font-size: 14px;
   line-height: 1.43;
   color: #444444;
-  text-align: end;
+  text-align: left;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .contacts {
-    background-color: #ffffff;
+    padding: 25px;
   }
 
   .contacts__text {
@@ -36,4 +37,10 @@
     line-height: 1.25;
     text-align: left;
   }
+}
+
+@media (min-width: $desktop-width) {
+  // .contacts {
+  //   background-color: #ffffff;
+  // }
 }

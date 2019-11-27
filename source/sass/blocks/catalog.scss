@@ -1,5 +1,10 @@
+.catalog {
+  margin: 20px;
+}
+
 .catalog__list {
   display: flex;
+  flex-direction: column;
 
   padding: 0;
   margin: 0;
@@ -7,15 +12,16 @@
 }
 
 .catalog__item {
-  // padding: 22px;
-  // margin: 20px 10px;
+  align-items: flex-start;
+  min-height: 266px;
+  margin-bottom: 24px;
+  padding: 0px 20px;
   background-color: #f2f2f2;
   color: #444444;
 }
 
 .catalog__title {
-  //flex-grow: 1;
-  //margin-left: 20px;
+  margin-left: 20px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -80,11 +86,54 @@
 .catalog__details {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin: 0 20px;
+  }
+
+  .catalog__list {
+    flex-direction: column;
+  }
+
   .catalog__actions {
     border: none;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    padding-bottom: 65px;
+    padding-left: 45px;
+  }
+
+  .catalog__item {
+    margin-bottom: 20px;
+    min-height: 372px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: unset;
+  }
+
+  .catalog__details {
+    align-items: unset;
+  }
+
+  .catalog__title {
+    flex-grow: 0;
+    font-size: 36px;
+    line-height: 1.03;
+  }
+
+  .catalog__description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .catalog__picture {
+    // margin-right: 50px;
+    // margin-top: 0px;
   }
 }
 
@@ -113,7 +162,7 @@
   .catalog__title {
     justify-content: flex-start;
     order: 1;
-    flex-grow: 1;
+    // flex-grow: 1;
     flex-basis: 50%;
     margin: 0;
     padding: 20px;
@@ -130,16 +179,16 @@
     padding-top: 40px;
     padding-left: 48px;
     min-height: 192px;
-    // justify-content: space-evenly;
   }
 
   .catalog__list {
+    flex-direction: row;
     justify-content: space-evenly;
   }
 
   .catalog__actions {
     padding-bottom: 65px;
-    padding-left: 56px;
+    padding-left: 45px;
 
     font-size: 20px;
     line-height: 1;
@@ -148,14 +197,12 @@
   .catalog__item {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    // flex-direction: column;
-    // justify-content: space-around;
     width: 570px;
     min-height: 372px;
   }
 
   .catalog__picture {
+    // margin: 0;
     width: 100px;
     height: 100px;
   }
@@ -180,8 +227,6 @@
 
   .catalog__description {
     min-height: 65px;
-    //padding-left: 55px;
-    //padding-top: 43px;
     font-size: 16px;
     line-height: 1.5;
   }

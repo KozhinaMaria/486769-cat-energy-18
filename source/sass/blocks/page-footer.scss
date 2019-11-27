@@ -5,6 +5,7 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+  min-height: 150px;
 }
 
 .page-footer__map {
@@ -31,6 +32,7 @@
 .page-footer__logo-place {
   display: flex;
   align-items: center;
+  min-height: 80px;
 }
 
 .page-footer__copyright {

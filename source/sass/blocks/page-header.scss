@@ -6,9 +6,9 @@
 .page-header__logo {
   height: 40px;
   width: 190px;
-  //margin-left: 20px;
-  //margin-top: 10px;
-  // margin-bottom: 15px;
+  margin-top: 12px;
+  margin-left: 20px;
+  margin-bottom: 15px;
   background: url("../../img/logo-mobile.svg") no-repeat;
 }
 
@@ -16,18 +16,26 @@
   .page-header {
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 55px;
+    justify-content: baseline;
+    //padding-top: 55px;
   }
 
   .page-header__logo {
+    flex-grow: 1;
     height: 60px;
+    margin-top: 21px;
+    margin-left: 27px;
     background: url("../../img/logo-tablet.svg") no-repeat;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 50px;
+  }
+
   .page-header__logo {
+    margin: 0;
     flex-grow: 2;
     margin-left: 110px;
   }
