@@ -130,11 +130,11 @@
 
   .promo-block__wrapper {
     &::before {
-      content: ' ';
+      content: " ";
       position: absolute;
       top: 0;
       right: 0;
-      background: url(../../img/index-background-desktop@1x.jpg) no-repeat;
+      background: url("../../img/index-background-desktop@1x.jpg") no-repeat;
       background-position: top right;
       height: 720px;
       width: 100%;
