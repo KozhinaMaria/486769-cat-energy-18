@@ -13,6 +13,11 @@
   margin: 20px;
 }
 
+.advantages__text {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
 .advantages__number {
   display: none;
 }
@@ -25,9 +30,11 @@
 }
 
 .advantages__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 60px;
-  text-align: center;
   background-color: $secondary-color;
 }
 
@@ -52,16 +59,37 @@
 
   .advantages__text {
     min-height: 70px;
-    margin: 0;
+    // margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    margin-top: 68px;
+    margin-left: 90px;
+  }
+
   .advantages__list {
     justify-content: space-between;
   }
 
   .advantages__item {
+    margin-top: -30px;
+    margin-left: -5px;
+    margin-right: auto;
+    justify-content: center;
     flex-basis: 20%;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .advantages__picture {
+    width: 80px;
+    height: 80px;
   }
 }

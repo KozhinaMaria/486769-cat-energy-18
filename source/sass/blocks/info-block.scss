@@ -22,3 +22,20 @@
   line-height: 1;
   margin-top: -7px;
 }
+
+@media (min-width: $desktop-width) {
+  .info-block__value {
+    padding: 8px 18px;
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .info-block__text {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .info-block--right {
+    margin-left: 40px;
+  }
+}

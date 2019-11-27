@@ -16,8 +16,12 @@
   .map__contacts {
     position: absolute;
     z-index: 1;
-    top: 25%;
-    left: 10%;
-    max-width: 500px;
+    top: 96px;
+    left: 110px;
+    min-width: 520px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 43px 22px;
   }
 }

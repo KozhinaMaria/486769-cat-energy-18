@@ -54,3 +54,15 @@
     left: 45%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .progression__text {
+    margin: 14px 21px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .progression {
+    align-items: center;
+  }
+}
