@@ -9,7 +9,6 @@
 
 .map__contacts {
   min-height: 115px;
-  //min-width: 320px;
 }
 
 @media (min-width: $desktop-width) {
@@ -22,7 +21,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 43px 22px;
   }
 
   .map__place {

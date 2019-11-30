@@ -12,6 +12,11 @@ body {
   background-color: $bg-white;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -30,5 +35,9 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1300px;
+}
+
+* {
+  box-sizing: border-box;
 }

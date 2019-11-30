@@ -1,43 +1,22 @@
-.info-block {
-  text-align: center;
-}
-
 .info-block__value {
-  min-width: 124px;
-  min-height: 56px;
   text-transform: uppercase;
-  text-align: center;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   border-radius: 3px;
   border: solid 1px #cdcdcd;
-  margin-bottom: 0;
-  border-bottom: none;
 }
 
 .info-block__text {
   font-size: 12px;
   line-height: 1;
-  margin-top: -7px;
 }
 
 @media (min-width: $tablet-width) {
   .info-block__value {
-    padding: 8px 18px;
     font-size: 30px;
     line-height: 1.23;
-  }
-
-  .info-block__text {
-    br {
-      display: none;
-    }
-  }
-
-  .info-block--right {
-    margin-left: 40px;
   }
 }
 
