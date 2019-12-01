@@ -79,9 +79,11 @@
   .promo-block__can-image-place {
     position: absolute;
 
-    left: 30px;
-    right: 0;
+    left: 0;
     bottom: 5px;
+    width: 709px;
+    height: 609px;
+
 
     margin: auto;
 
@@ -123,25 +125,6 @@
   .promo-block {
     position: relative;
     min-height: 670px;
-  }
-
-  .promo-block__bg::before {
-    content: "";
-
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-color: #63a639;
-
-    position: absolute;
-
-    left: auto;
-    right: 0;
-    top: -125px;
-
-    width: 50%;
-    height: 696px;
-
-    z-index: -1;
   }
 
   .promo-block__wrapper {
