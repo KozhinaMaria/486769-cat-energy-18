@@ -27,7 +27,7 @@
 
   &--slim::before {
     content: "";
-    background: url(../../img/icon-cat-slim.svg) no-repeat;
+    background: url("../../img/icon-cat-slim.svg") no-repeat;
     background-position: center;
 
     position: absolute;
@@ -38,7 +38,7 @@
 
   &--pro::before {
     content: "";
-    background: url(../../img/icon-cat-pro.svg) no-repeat;
+    background: url("../../img/icon-cat-pro.svg") no-repeat;
     background-position: center;
 
     position: absolute;

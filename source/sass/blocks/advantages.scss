@@ -46,7 +46,7 @@
 
   &--leaf::before {
     content: "";
-    background: url(../../img/advantage-leaf@1x.png) no-repeat;
+    background: url("../../img/advantage-leaf@1x.png") no-repeat;
 
     background-position: center;
 
@@ -58,7 +58,7 @@
 
   &--clock::before {
     content: "";
-    background: url(../../img/advantage-clock@1x.png) no-repeat;
+    background: url("../../img/advantage-clock@1x.png") no-repeat;
 
     background-position: center;
 
@@ -70,7 +70,7 @@
 
   &--dining::before {
     content: "";
-    background: url(../../img/advantage-dining@1x.png) no-repeat;
+    background: url("../../img/advantage-dining@1x.png") no-repeat;
 
     background-position: center;
 
@@ -82,7 +82,7 @@
 
   &--powder::before {
     content: "";
-    background: url(../../img/advantage-powder@1x.png) no-repeat;
+    background: url("../../img/advantage-powder@1x.png") no-repeat;
 
     background-position: center;
 
@@ -169,7 +169,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding: 70px 40px 0px 40px;
+    padding: 70px 40px 0 40px;
     border-bottom: unset;
   }
 
