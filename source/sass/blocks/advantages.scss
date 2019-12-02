@@ -168,8 +168,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    padding: 70px 40px 0px 40px;
+    border-bottom: unset;
+  }
+
   .advantages__title {
     font-size: 60px;
     line-height: 1;
+  }
+
+  .advantages__item {
+    width: 20%;
+    padding-right: 0;
   }
 }
