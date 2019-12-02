@@ -1,31 +1,110 @@
+.advantages {
+  padding: 15px 20px 22px 20px;
+}
+
 .advantages__list {
+  position: relative;
+
   margin: 0;
   padding: 0;
+  padding-top: 31px;
+
   list-style-type: none;
 }
 
+.advantages__item {
+  display: flex;
+  padding-bottom: 20px;
+}
+
 .advantages__text {
+  margin: 0;
+
   font-size: 14px;
   line-height: 1.29;
 }
 
 .advantages__title {
   margin: 0;
+
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.67;
 }
 
+.advantages__picture {
+  position: relative;
+
+  flex-shrink: 0;
+
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+
+  background-color: #68b738;
+
+  &--leaf::before {
+    content: "";
+    background: url(../../img/advantage-leaf@1x.png) no-repeat;
+
+    background-position: center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &--clock::before {
+    content: "";
+    background: url(../../img/advantage-clock@1x.png) no-repeat;
+
+    background-position: center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &--dining::before {
+    content: "";
+    background: url(../../img/advantage-dining@1x.png) no-repeat;
+
+    background-position: center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &--powder::before {
+    content: "";
+    background: url(../../img/advantage-powder@1x.png) no-repeat;
+
+    background-position: center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .advantages__number {
     display: flex;
     position: absolute;
+
     right: 20px;
     margin: 0;
+
     font-family: "Oswald", sans-serif;
     line-height: 1;
     font-size: 281px;
+
     color: rgba(#f2f2f2, 0.5);
   }
 
@@ -35,7 +114,7 @@
   }
 
   .advantages__title {
-    font-size: 60px;
+    font-size: 63px;
     line-height: 1;
   }
 }
