@@ -114,15 +114,12 @@
     </section>
 
     <section class="example">
-      <div class="example__wrapper container">
+      <div class="example__wrapper">
         <div class="example__details-wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">
-            Борис сбросил 5 кг за 2 месяца, просто<br> заменив свой обычный корм на Cat<br> Energy Slim. Отличный
-            результат
-
-            без <br>
-            изнуряющих тренировок! При этом он не <br>менял своих привычек и по-прежнему<br> спит по 16 часов в день.
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
           <div class="example__info-wrapper">
             <div class="example__info-block info-block info-block--left">
@@ -139,30 +136,28 @@
           <p class="example__subtitle">Затраты на питание: <span class="example__subtitle-value">15 000 руб.</span></p>
         </div>
         <div class="example__result-wrapper">
-          <p class="example__picture example__picture--before">
+          <div class="example__picture example__picture--before">
             <picture>
               <source media="(min-width: 1440px)" srcset="./img/before-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png">
-              <img class="example__image" src="./img/before-mobile@1x.png" alt="Кот" width="320" height="500">
+              <img class="example__image" src="./img/before-mobile@1x.png" alt="Кот" width="311" height="232">
             </picture>
-          </p>
-          <p class="example__picture example__picture--after">
+          </div>
+          <div class="example__picture example__picture--after">
             <picture>
               <source media="(min-width: 1440px)" srcset="./img/after-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="./img/after-tablet@1x.png">
               <img class="example__image example__image--after" src="./img/after-mobile@1x.png" alt="Кот" width="320"
                 height="500">
             </picture>
-          </p>
-
-          <div class="example__progression progression">
-            <p class="progression__text progression__text--before">Было</p>
-            <div class="progression__container">
-              <span class="progression__value">
-              </span>
-            </div>
-            <p class="progression__text progression__text--after">Стало</p>
           </div>
+        </div>
+        <div class="example__progression progression container">
+          <p class="progression__text progression__text--before">Было</p>
+          <div class="progression__container">
+            <input class="progression__value" type="range">
+          </div>
+          <p class="progression__text progression__text--after">Стало</p>
         </div>
       </div>
     </section>

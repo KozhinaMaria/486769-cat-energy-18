@@ -1,16 +1,38 @@
+.info-block {
+  position: relative;
+
+  width: 124px;
+  text-align: center;
+}
+
 .info-block__value {
+  padding-top: 12px;
+  padding-bottom: 18px;
+
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
+
   border-radius: 3px;
   border: solid 1px #cdcdcd;
 }
 
 .info-block__text {
+  position: absolute;
+  bottom: -15px;
+  left: 19px;
+
+  height: 24px;
+  width: 87px;
+
   font-size: 12px;
   line-height: 1;
+
+  z-index: 1;
+
+  background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
