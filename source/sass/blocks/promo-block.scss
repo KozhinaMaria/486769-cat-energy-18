@@ -124,7 +124,7 @@
 @media (min-width: $desktop-width) {
   .promo-block {
     position: relative;
-    min-height: 670px;
+    min-height: 652px;
   }
 
   .promo-block__wrapper {
@@ -132,6 +132,8 @@
   }
 
   .promo-block__can-image-place {
+    margin: unset;
+
     left: calc(50% - 155px);
     top: 0;
     bottom: 0;
