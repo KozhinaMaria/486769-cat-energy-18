@@ -1,4 +1,8 @@
 .contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 24px 20px 18px;
+
   background-color: #ffffff;
 }
 
@@ -15,6 +19,11 @@
   line-height: 1.43;
   color: #444444;
   text-align: left;
+}
+
+.contacts__text,
+.contacts__address {
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
