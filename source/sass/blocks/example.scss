@@ -8,6 +8,7 @@
 
 .example__info-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -33,6 +34,7 @@
 }
 
 .example__subtitle {
+  width: 100%;
   padding-top: 35px;
 
   text-align: center;
@@ -66,17 +68,44 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-color: unset;
+  }
+
+  .example__details-wrapper {
+    padding: 45px 30px 35px 30px;
+  }
+
+  .example__result-wrapper {
+    display: flex;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
   .example__title {
     font-size: 60px;
     line-height: 1;
   }
 
   .example__subtitle {
+    width: unset;
+
+    padding-top: 11px;
+
+    text-align: right;
     font-size: 20px;
     line-height: 1;
   }
 
+  .example__subtitle-value {
+    display: block;
+    padding-top: 10px;
+  }
+
   .example__description {
+    padding-top: 62px;
+    padding-bottom: 53px;
+
     font-size: 16px;
     line-height: 1.5;
   }
@@ -86,24 +115,29 @@
   }
 
   .example__image {
-    min-height: 550px;
+    height: 100%;
     width: auto;
-    content: url("../../img/before-tablet@1x.png");
-
-    &--after {
-      min-height: 560px;
-      content: url("../../img/after-tablet@1x.png");
-    }
   }
 
   .example__picture {
     display: flex;
     overflow: hidden;
 
+    &--before {
+      margin-top: 64px;
+      margin-left: 42px;
+    }
+
     &--after {
       display: flex;
       justify-content: flex-end;
+      margin-top: 51px;
+      margin-right: 19px;
     }
+  }
+
+  .example__picture img {
+    width: auto;
   }
 }
 
@@ -128,7 +162,6 @@
   }
 
   .example__picture {
-    display: flex;
     overflow: hidden;
 
     &--before {

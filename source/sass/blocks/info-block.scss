@@ -36,9 +36,33 @@
 }
 
 @media (min-width: $tablet-width) {
+  .info-block {
+    width: 162px;
+  }
+
   .info-block__value {
     font-size: 30px;
     line-height: 1.23;
+  }
+
+  .info-block__text {
+    bottom: -19px;
+    left: 23px;
+    width: 114px;
+
+    font-size: 14px;
+    line-height: 1;
+
+    background-color: #ffffff;
+
+    br {
+      display: none;
+    }
+  }
+
+  .info-block--right {
+    margin-right: auto;
+    margin-left: 42px;
   }
 }
 
