@@ -159,7 +159,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-bottom: unset;
+    padding-bottom: 40px;
   }
 
   .example__wrapper {
@@ -170,19 +170,19 @@
   }
 
   .example__bg {
-    height: 423px;
+    height: 462px;
   }
 
   .example__details-wrapper {
     flex-basis: 40%;
-    padding: 35px 87px 35px 87px;
+    padding: 35px 40px 35px 40px;
   }
 
   .example__progression.progression {
     position: absolute;
     margin-right: 0;
 
-    right: 112px;
+    right: 40px;
     bottom: -2px;
   }
 
@@ -204,7 +204,7 @@
 
   .example__description {
     padding-top: 148px;
-    padding-bottom: 45px;
+    padding-bottom: 70px;
 
     font-size: 16px;
     line-height: 1.5;
@@ -213,5 +213,16 @@
   .example__picture--before,
   .example__picture--after {
     margin-top: unset;
+  }
+
+  .example__picture--before {
+    width: 100%;
+    margin-top: -16px;
+    margin-left: 82px;
+  }
+
+  .example__picture--after {
+    margin-top: -19px;
+    margin-right: -9px;
   }
 }
