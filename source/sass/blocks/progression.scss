@@ -98,7 +98,7 @@
 
     width: 8px;
     height: 8px;
-    box-shadow: 0 0 0 12px #ffffff, 0px 2px 5px 13px #cdcdcd;
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px #cdcdcd;
   }
 
   /* All the same stuff for Firefox */
@@ -109,7 +109,7 @@
 
     width: 8px;
     height: 8px;
-    box-shadow: 0 0 0 12px #ffffff, 0px 2px 5px 13px #cdcdcd;
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px #cdcdcd;
   }
 
   /* All the same stuff for IE */
@@ -120,14 +120,13 @@
 
     width: 8px;
     height: 8px;
-    box-shadow: 0 0 0 12px #ffffff, 0px 2px 5px 13px #cdcdcd;
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px #cdcdcd;
   }
 
   .progression__text {
     font-size: 20px;
     line-height: 1;
   }
-
 }
 
-@media (min-width: $desktop-width) {}
+// @media (min-width: $desktop-width) {}
