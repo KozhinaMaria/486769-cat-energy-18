@@ -42,3 +42,15 @@
     text-align: right;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding: 0 45px 0 31px;
+    width: 570px;
+  }
+
+  .contacts__address {
+    padding-bottom: 20px;
+    text-align: left;
+  }
+}
