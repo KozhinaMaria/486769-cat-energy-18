@@ -157,42 +157,61 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .example__title {
-//     font-size: 60px;
-//   }
+@media (min-width: $desktop-width) {
+  .example {
+    padding-bottom: unset;
+  }
 
-//   .example__subtitle {
-//     font-size: 20px;
-//     line-height: 1;
-//   }
+  .example__wrapper {
+    position: relative;
 
-//   .example__image {
-//     min-height: 500px;
-//     width: auto;
-//     content: url("../../img/before-desktop@1x.png");
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-//     &--after {
-//       content: url("../../img/after-desktop@1x.png");
-//     }
-//   }
+  .example__bg {
+    height: 423px;
+  }
 
-//   .example__picture {
-//     overflow: hidden;
+  .example__details-wrapper {
+    flex-basis: 40%;
+    padding: 35px 87px 35px 87px;
+  }
 
-//     &--before {
-//       width: 365px;
-//     }
+  .example__progression.progression {
+    position: absolute;
+    margin-right: 0;
 
-//     &--after {
-//       width: 335px;
-//       display: flex;
-//       justify-content: flex-end;
-//     }
-//   }
+    right: 112px;
+    bottom: -2px;
+  }
 
-//   .example__description {
-//     font-size: 16px;
-//     line-height: 1.5;
-//   }
-// }
+  .example__subtitle-value {
+    display: unset;
+    padding-left: 58px;
+  }
+
+  .example__title {
+    font-size: 60px;
+  }
+
+  .example__subtitle {
+    padding-top: 64px;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .example__description {
+    padding-top: 148px;
+    padding-bottom: 45px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .example__picture--before,
+  .example__picture--after {
+    margin-top: unset;
+  }
+}
