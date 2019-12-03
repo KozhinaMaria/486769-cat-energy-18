@@ -91,6 +91,7 @@
 
   .example__result-wrapper {
     display: flex;
+    align-self: flex-end;
     max-width: 768px;
     margin: 0 auto;
 
@@ -170,7 +171,10 @@
   }
 
   .example__bg {
-    height: 462px;
+    height: calc(100% - 172px);
+
+    //height: 75%;
+    // height: 462px;
   }
 
   .example__details-wrapper {
@@ -208,6 +212,10 @@
 
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  .example__result-wrapper {
+    margin-bottom: 90px;
   }
 
   .example__picture--before,
