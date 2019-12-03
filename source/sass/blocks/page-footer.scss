@@ -46,4 +46,18 @@
   .page-footer__map {
     min-height: 400px;
   }
+
+  .page-footer__social {
+    border: unset;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    padding: 28px 25px 33px 25px;
+  }
+
+  .page-footer__logo-place {
+    padding: 30px 5px;
+    text-align: left;
+  }
 }

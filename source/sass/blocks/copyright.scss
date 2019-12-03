@@ -19,3 +19,14 @@
   height: 40px;
   content: url("../../img/htmlacademy.svg");
 }
+
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+  }
+
+  .copyright__link {
+    padding-right: 15px;
+  }
+}

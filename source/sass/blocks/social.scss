@@ -14,3 +14,25 @@
 .social__link {
   opacity: 0.5;
 }
+
+
+@media (min-width: $tablet-width) {
+  .social__item {
+    padding: 9px 25px 0px 3px;
+  }
+
+  .social__link-vkontakte {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link-instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link-facebook {
+    width: 14px;
+    height: 28px;
+  }
+}

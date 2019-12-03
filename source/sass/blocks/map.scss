@@ -11,6 +11,12 @@
   min-height: 115px;
 }
 
+@media (min-width: $tablet-width) {
+  .map__place {
+    min-height: 400px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .map__contacts {
     position: absolute;
@@ -25,11 +31,5 @@
 
   .map__place {
     min-height: 400px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .map__place {
-    min-height: 426px;
   }
 }
