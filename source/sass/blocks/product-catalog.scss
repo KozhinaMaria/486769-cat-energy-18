@@ -1,28 +1,36 @@
 .product-catalog__list {
   padding: 0;
+  margin: 0;
   list-style-type: none;
+}
+
+.product-catalog__title,
+.product-catalog__item,
+.product-catalog__name,
+.product-catalog__picture {
+  margin: 0;
 }
 
 .product-catalog {
   border-top: 1px solid $primary-border-color;
-  min-height: 210px;
 }
 
 .product-catalog__title,
 .product-catalog__name,
-.product-catalog__order-btn {
+.product-catalog__order-btn,
+.product-catalog__more-btn {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
 
 .product-catalog__title {
-  padding: 0 20px;
   font-size: 36px;
   line-height: 1.67;
 }
 
 .product-catalog__name,
-.product-catalog__order-btn {
+.product-catalog__order-btn,
+.product-catalog__more-btn {
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -31,13 +39,6 @@
 .product-catalog__info {
   font-size: 12px;
   line-height: 1.33;
-  width: 100%;
-}
-
-.product-catalog__more-block {
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 .product-catalog__item,
@@ -45,76 +46,27 @@
   border-top: 1px solid $primary-border-color;
 }
 
+.product-catalog__more-btn,
 .product-catalog__order-btn {
-  display: block;
-  margin: 20px;
-  flex-basis: 100%;
+  margin: 0 auto;
 
-  text-align: center;
-  text-decoration: none;
+  height: 40px;
+
   line-height: 2.5em;
+}
 
+.product-catalog__more-btn {
+  background-color: #f2f2f2;
+  color: #444444;
+}
+
+.product-catalog__order-btn {
   background-color: $secondary-color;
   color: #ffffff;
 }
 
-
-.product-catalog__item {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 210px;
-}
-
-.product-catalog__info-wrapper {
-  min-width: 160px;
-  padding: 30px;
-  flex-grow: 1;
-}
-
 @media (min-width: $tablet-width) {
-  .product-catalog__list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0 auto;
-    min-height: 431px;
-    justify-content: space-around;
-  }
-
-  .product-catalog__image {
-    &--chicken-small {
-      content: url("../../img/chicken-small-tablet@1x.png");
-    }
-
-    &--chicken {
-      content: url("../../img/chicken-big-tablet@1x.png");
-    }
-
-    &--fish-small {
-      content: url("../../img/fish-small-tablet@1x.png");
-    }
-
-    &--fish {
-      content: url("../../img/fish-big-tablet@1x.png");
-    }
-
-    &--buckwheat-small {
-      content: url("../../img/buckwheat-small-tablet@1x.png");
-    }
-
-    &--buckwheat {
-      content: url("../../img/buckwheat-big-tablet@1x.png");
-    }
-
-    &--rice {
-      content: url("../../img/rice-small-tablet@1x.png");
-    }
-  }
-
   .product-catalog__item {
-    width: 30%;
-    margin: 90px 0;
-    min-width: 320px;
     background-color: #f3f3f3;
   }
 
@@ -132,46 +84,9 @@
     font-size: 60px;
     line-height: 1;
   }
-
-  .product-catalog__picture {
-    margin-top: -100px;
-    text-align: center;
-    flex-basis: 100%;
-  }
 }
 
-@media (min-width: $desktop-width) {
-  .product-catalog__item {
-    width: 245px;
-  }
+// @media (min-width: $desktop-width) {
+//   .product-catalog__item {}
 
-  .product-catalog__image {
-    &--chicken-small {
-      content: url("../../img/chicken-small-desktop@1x.png");
-    }
-
-    &--chicken {
-      content: url("../../img/chicken-big-desktop@1x.png");
-    }
-
-    &--fish-small {
-      content: url("../../img/fish-small-desktop@1x.png");
-    }
-
-    &--fish {
-      content: url("../../img/fish-big-desktop@1x.png");
-    }
-
-    &--buckwheat-small {
-      content: url("../../img/buckwheat-small-desktop@1x.png");
-    }
-
-    &--buckwheat {
-      content: url("../../img/buckwheat-big-desktop@1x.png");
-    }
-
-    &--rice {
-      content: url("../../img/rice-small-desktop@1x.png");
-    }
-  }
-}
+// }
