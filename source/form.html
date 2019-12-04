@@ -39,54 +39,58 @@
     <form class="form-program container" action="https://echo.htmlacademy.ru">
       <div class="form-program__wrapper form-program__wrapper--header">
         <p class="form-program__title">Подбор программы</p>
-        <p class="form-program__subtitle">Заполните анкету и мы подберем
+        <p class="form-program__subtitle">Заполните анкету и мы подберем <br>
           программу питания для вашего кота</p>
       </div>
-      <fieldset class="form-program__cat-info fieldset-block">
-        <div class="form-program__wrapper">
-          <label class="fieldset-block__label">
-            Имя:<sup class="required-asterix">*</sup> <input class="fieldset-block__value fieldset-block__value--text"
-              type="text" id="catName" name="catName" value="Барсик">
-          </label>
-          <label class="fieldset-block__label">
-            Вес (кг):<sup class="required-asterix">*</sup> <input
-              class="fieldset-block__value fieldset-block__value--text" type="text" id="catWeight" name="catWeight"
-              value="7">
-          </label>
-          <label class="fieldset-block__label">
-            Возраст (лет): <input class="fieldset-block__value fieldset-block__value--text" type="text" id="catAge"
-              name="catAge" value="7">
-          </label>
-        </div>
-      </fieldset>
 
-      <fieldset class="form-program__checkbox fieldset-block">
-        <div class="form-program__wrapper form-program__wrapper--radio">
-          <label class="fieldset-block__label">
-            <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal"
-              value="loseWeight" checked> Похудение
-          </label>
-          <label class="fieldset-block__label">
-            <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal"
-              value="putonWeight"> Набор
-            массы
-          </label>
-          <label class="fieldset-block__label">
-            <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal" value="other"> Не
-            знаю
-            (Нужен ваш совет)
-          </label>
-        </div>
-      </fieldset>
+      <div class="form-program__wrapper-info">
+        <fieldset class="form-program__cat-info fieldset-block">
+          <div class="form-program__wrapper">
+            <label class="fieldset-block__label">
+              Имя:<sup class="required-asterix">*</sup> <input class="fieldset-block__value fieldset-block__value--text"
+                type="text" id="catName" name="catName" value="Барсик">
+            </label>
+            <label class="fieldset-block__label">
+              Вес (кг):<sup class="required-asterix">*</sup> <input
+                class="fieldset-block__value fieldset-block__value--text" type="text" id="catWeight" name="catWeight"
+                value="7">
+            </label>
+            <label class="fieldset-block__label">
+              Возраст (лет): <input class="fieldset-block__value fieldset-block__value--text" type="text" id="catAge"
+                name="catAge" value="7">
+            </label>
+          </div>
+        </fieldset>
 
-      <fieldset class="form-program__user-contacts user-contacts fieldset-block">
-        <legend class="fieldset-block__legend title-with-line">
-          <div class="title-with-line__before"></div>
-          <p class="fieldset-block__legend-title title-with-line__title">
-            Контактные данные (владельца кота)
-          </p>
-          <div class="title-with-line__after"></div>
-        </legend>
+        <fieldset class="form-program__radio fieldset-block">
+          <div class="form-program__wrapper form-program__wrapper--radio">
+            <label class="fieldset-block__label">
+              <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal"
+                value="loseWeight" checked> Похудение
+            </label>
+            <label class="fieldset-block__label">
+              <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal"
+                value="putonWeight"> Набор
+              массы
+            </label>
+            <label class="fieldset-block__label">
+              <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal" value="other">
+              Не
+              знаю
+              (Нужен ваш совет)
+            </label>
+          </div>
+        </fieldset>
+
+      </div>
+      <div class="fieldset-block__legend title-with-line">
+        <div class="title-with-line__before"></div>
+        <p class="fieldset-block__legend-title title-with-line__title">
+          Контактные данные (владельца кота)
+        </p>
+        <div class="title-with-line__after"></div>
+      </div>
+      <fieldset class="form-program__user-contacts fieldset-block container">
         <div class="form-program__wrapper">
           <label class="fieldset-block__label">
             E-mail:<sup class="required-asterix">*</sup> <input
@@ -101,14 +105,14 @@
         </div>
       </fieldset>
 
-      <fieldset class="form-program__comments fieldset-block">
-        <legend class="fieldset-block__legend title-with-line">
-          <div class="title-with-line__before"></div>
-          <p class="fieldset-block__legend-title title-with-line__title">
-            Комментарий
-          </p>
-          <div class="title-with-line__after"></div>
-        </legend>
+      <div class="fieldset-block__legend title-with-line">
+        <div class="title-with-line__before"></div>
+        <p class="fieldset-block__legend-title title-with-line__title">
+          Комментарий
+        </p>
+        <div class="title-with-line__after"></div>
+      </div>
+      <fieldset class="form-program__comments fieldset-block container">
         <div class="form-program__wrapper">
           <textarea class="fieldset-block__textareas fieldset-block__value--textarea" rows="4" cols="50" name="comment">
             Расскажите обо всех повадках кота
@@ -116,14 +120,14 @@
         </div>
       </fieldset>
 
+      <div class="fieldset-block__legend title-with-line">
+        <div class="title-with-line__before"></div>
+        <p class="fieldset-block__legend-title title-with-line__title">
+          Дополнительно
+        </p>
+        <div class="title-with-line__after"></div>
+      </div>
       <fieldset class="form-program__other fieldset-block">
-        <legend class="fieldset-block__legend title-with-line">
-          <div class="title-with-line__before"></div>
-          <p class="fieldset-block__legend-title title-with-line__title">
-            Дополнительно
-          </p>
-          <div class="title-with-line__after"></div>
-        </legend>
         <div class="form-program__wrapper">
           <div class="form-program__other-wrapper">
             <label class="fieldset-block__label fieldset-block__label--checkbox">
@@ -149,9 +153,9 @@
 
       <div class="form-program__footer">
         <input class="form-program__order-btn button" type="submit" value="Отправить заявку"></input>
-        <small class="form-program__legend form-program__legend--bottom">
+        <p class="form-program__legend form-program__legend--bottom">
           <sup class="required-asterix">*</sup> — Обязательные поля
-        </small>
+        </p>
       </div>
     </form>
   </main>
