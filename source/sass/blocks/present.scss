@@ -3,7 +3,7 @@
   justify-content: center;
   flex-grow: 1;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .present__wrapper {
@@ -45,6 +45,19 @@
   .present__present-image {
     flex-basis: 80%;
     margin-left: 90px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .present {
+    margin-top: 73px;
+    margin-bottom: 82px;
+  }
+
+  .present__title {
+    padding: 0;
+    padding-right: 122px;
+    text-align: left;
   }
 }
 

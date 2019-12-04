@@ -10,4 +10,18 @@
 
 .info-list__item {
   list-style-type: none;
+  font-size: 14px;
+  line-height: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .info-list__item {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .info-list {
+    flex-grow: 1;
+    padding: 0;
+  }
 }
