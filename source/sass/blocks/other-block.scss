@@ -115,5 +115,40 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-// }
+@media (min-width: $desktop-width) {
+  .other-block {
+    padding-top: 77px;
+    margin-bottom: 90px;
+
+    border-top: unset;
+  }
+
+  .other-block__wrapper {
+    display: flex;
+  }
+
+  .other-block__title {
+    padding: 0 56px;
+  }
+
+  .other-block__list {
+    width: 73%;
+  }
+
+  .other-block__item {
+    padding: 16px 0 14px 10px;
+
+    border-left: unset;
+    border-right: unset;
+
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .other-block__order-btn {
+    margin: 0;
+    margin-left: 42px;
+
+    flex-basis: 245px;
+  }
+}
