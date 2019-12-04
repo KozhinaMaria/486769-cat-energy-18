@@ -2,27 +2,42 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
-  font-weight: normal;
+
   font-size: 14px;
   line-height: 1.29;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  color: #444444;
 
   background-color: $bg-white;
-  color: #444444;
 }
 
-.visually-hidden {
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
+
   width: 1px;
+  height: 1px;
   margin: -1px;
-  padding: 0;
   border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1300px;
+}
+
+* {
+  box-sizing: border-box;
 }

@@ -1,9 +1,9 @@
 .contacts {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #f2f2f2;
-  padding: 25px;
+  padding: 32px 24px 20px 18px;
+
+  background-color: #ffffff;
 }
 
 .contacts__text {
@@ -18,11 +18,39 @@
   font-size: 14px;
   line-height: 1.43;
   color: #444444;
-  text-align: end;
+  text-align: left;
+}
+
+.contacts__text,
+.contacts__address {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 60px 72px 64px 71px;
+  }
+
+  .contacts__text {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    background-color: #ffffff;
+    padding: 0 45px 0 31px;
+    width: 570px;
+  }
+
+  .contacts__address {
+    padding-bottom: 20px;
+    text-align: left;
   }
 }

@@ -1,6 +1,8 @@
 .progression {
+  position: relative;
+
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .progression__text {
@@ -12,45 +14,124 @@
   line-height: 1.25;
 }
 
-.progression__container {
-  position: relative;
-  z-index: 1000;
+.progression__value {
+  margin: 0 20px;
+  appearance: none;
+  /* Hides the slider so that custom slider can be made */
   width: 84px;
   height: 14px;
+  padding: 2px 6px;
+
   border-radius: 6px;
   border: solid 1px #cdcdcd;
   background-color: #ffffff;
+
+  /* Otherwise white in Chrome */
 }
 
+.progression__value:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
 
-.progression__value {
-  position: absolute;
-  top: 4px;
-  left: 6px;
+.progression__value::-ms-track {
+  width: 84px;
+  height: 14px;
+  padding: 2px 6px;
+
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+.progression__value::-webkit-slider-thumb {
+  appearance: none;
   width: 35px;
   height: 6px;
   border-radius: 3px;
-  background-color: #68b738;
+  background: #68b738;
+  cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+.progression__value::-moz-range-thumb {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background: #68b738;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.progression__value::-ms-thumb {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background: #68b738;
+  cursor: pointer;
 }
 
 
 @media (min-width: $tablet-width) {
   .progression__container {
-    height: 6px;
-    width: 428px;
-    border: none;
-    border-radius: 2.5px;
-    background-color: #dcdcdc;
+    padding-left: 24px;
+    padding-right: 20px;
   }
 
   .progression__value {
-    width: 30px;
-    height: 30px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-    border: solid 1px #cdcdcd;
-    background-color: #ffffff;
+    margin: 10px 0;
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+
+    padding: unset;
+    border: unset;
+  }
+
+  /* Special styling for WebKit/Blink */
+  .progression__value::-webkit-slider-thumb {
+    position: relative;
     border-radius: 50%;
-    top: -12px;
-    left: 45%;
+    border: unset;
+
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px #cdcdcd;
+  }
+
+  /* All the same stuff for Firefox */
+  .progression__value::-moz-range-thumb {
+    position: relative;
+    border-radius: 50%;
+    border: unset;
+
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px #cdcdcd;
+  }
+
+  /* All the same stuff for IE */
+  .progression__value::-ms-thumb {
+    position: relative;
+    border-radius: 50%;
+    border: unset;
+
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px #cdcdcd;
+  }
+
+  .progression__text {
+    font-size: 20px;
+    line-height: 1;
   }
 }
+
+// @media (min-width: $desktop-width) {}

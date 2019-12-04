@@ -3,21 +3,35 @@
 }
 
 .map__place {
-  height: 400px;
+  min-height: 367px;
   width: 100%;
 }
 
 .map__contacts {
   min-height: 115px;
-  min-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__place {
+    min-height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .map__contacts {
     position: absolute;
     z-index: 1;
-    top: 25%;
-    left: 10%;
-    max-width: 500px;
+    top: 96px;
+    left: 110px;
+
+    min-height: 195px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .map__place {
+    min-height: 400px;
   }
 }

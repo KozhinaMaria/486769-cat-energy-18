@@ -1,4 +1,8 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -11,8 +15,18 @@
 }
 
 .copyright__logo {
-  display: flex;
-  height: 34px;
-  color: transparent;
-  background: url("../../img/htmlacademy.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+  content: url("../../img/htmlacademy.svg");
+}
+
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+  }
+
+  .copyright__link {
+    padding-right: 15px;
+  }
 }

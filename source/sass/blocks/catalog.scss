@@ -1,49 +1,71 @@
 .catalog__list {
   padding: 0;
+  margin: 0 20px;
   list-style-type: none;
 }
 
 .catalog__item {
-  padding: 22px;
-  margin: 20px 10px;
+  position: relative;
+  padding: 24px 20px 22px 20px;
+
   background-color: #f2f2f2;
   color: #444444;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.catalog__picture {
+  position: absolute;
+
+  width: 50px;
+  height: 51px;
+
+  border-radius: 50%;
+  background-color: #68b738;
+
+  &--slim::before {
+    content: "";
+    background: url("../../img/icon-cat-slim.svg") no-repeat;
+    background-position: center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 49px;
+  }
+
+  &--pro::before {
+    content: "";
+    background: url("../../img/icon-cat-pro.svg") no-repeat;
+    background-position: center;
+
+    position: absolute;
+
+    width: 69px;
+    height: 50px;
+
+    left: -10px;
+  }
 }
 
 .catalog__title {
-  flex-grow: 1;
-  margin-left: 20px;
+  margin: 0;
+  padding-left: 70px;
+
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.29;
+  line-height: 1.54;
   text-transform: uppercase;
 }
 
 .catalog__description {
+  margin: 0;
+  padding-top: 33px;
+  padding-bottom: 23px;
   text-align: left;
-}
-
-.catalog__picture {
-  width: 50px;
-  height: 51px;
-  text-align: center;
-  background-color: $secondary-color;
-  border-radius: 50%;
-}
-
-.catalog__image {
-  &--slim {
-    width: 35px;
-    height: 49px;
-  }
-
-  &--pro {
-    width: 67px;
-    height: 28px;
-
-    margin: 20% -30%;
-  }
 }
 
 .catalog__actions {
@@ -52,12 +74,14 @@
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
+
+  border-top: solid 1px #cdcdcd;
+
   color: #111111;
 
-  border-top: 1px solid #dedede;
-  padding-top: 20px;
-
   a {
+    display: block;
+    padding-top: 20px;
     text-decoration: none;
     color: inherit;
   }
@@ -74,52 +98,134 @@
   background-size: 25px 12px;
 }
 
-.catalog__details {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 @media (min-width: $tablet-width) {
-  .catalog__actions {
-    border: none;
+  .catalog__list {
+    margin: 0 30px;
   }
-}
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .catalog__item {
+    padding: 68px 312px 62px 52px;
+
+    &:first-child {
+      padding-right: 280px;
+      margin-bottom: 30px;
+    }
+  }
+
   .catalog__picture {
     width: 200px;
     height: 200px;
-    order: 2;
-  }
 
-  .catalog__image {
-    &--slim {
-      width: 140px;
-      height: 195px;
+    right: 62px;
+    top: 22%;
+
+    &--slim::before {
+      height: 194px;
+
+      bottom: 15px;
     }
 
-    &--pro {
+    &--pro::before {
       width: 268px;
       height: 113px;
 
-      margin: 20% -30%;
+      right: -34px;
+      left: unset;
+      top: 22%;
     }
   }
 
-  .catalog__description,
+  .catalog__actions {
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+
+    a {
+      padding-top: unset;
+    }
+  }
+
   .catalog__title {
-    justify-content: flex-start;
-    order: 1;
-    flex-grow: 1;
-    flex-basis: 50%;
-    margin: 0;
-    padding: 20px;
+    padding-left: 0;
+
+    font-size: 36px;
+    line-height: 1.03;
+  }
+
+  .catalog__description {
+    padding-top: 26px;
+    padding-bottom: 61px;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    br {
+      display: none;
+    }
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .catalog__list {
     display: flex;
+    margin: 0 40px;
+  }
+
+  .catalog__item {
+    padding: 80px 52px 22px 53px;
+    width: 570px;
+
+    &:first-child {
+      padding-right: 52px;
+      margin-bottom: unset;
+      margin-right: 80px;
+    }
+  }
+
+  .catalog__actions {
+    padding-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .catalog__picture {
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 50px;
+
+    &--slim::before {
+      height: 91px;
+    }
+
+    &--pro::before {
+      width: 134px;
+      height: 57px;
+
+      right: 0;
+      left: -15px;
+      top: 20px;
+    }
+  }
+
+  .catalog__title {
+    padding-left: 160px;
+
+    font-size: 36px;
+    line-height: 1.03;
+  }
+
+  .catalog__description {
+    padding-top: 69px;
+    padding-bottom: 34px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .catalog__link-name::after {
+    margin-left: 21px;
+    margin-bottom: 5px;
   }
 }

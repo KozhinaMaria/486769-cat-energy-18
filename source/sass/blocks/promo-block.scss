@@ -1,92 +1,103 @@
 .promo-block {
+  position: relative;
+
   font-family: "Oswald", sans-serif;
   font-weight: 400;
+  text-align: center;
   color: #ffffff;
-  background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
-  background-position: top 0 center;
-}
 
-.promo-block__info {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  z-index: 0;
+  &::before {
+    content: "";
+
+    background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
+    background-position: top 0 center;
+    background-color: #63a639;
+
+    position: absolute;
+
+    left: auto;
+    right: 0;
+    top: 0;
+
+    width: 100%;
+    height: 305px;
+
+    z-index: -1;
+  }
 }
 
 .promo-block__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 100%;
+  padding: 29px 20px 22px 20px;
 }
 
 .promo-block__program-btn {
-  display: block;
-  margin: 20px auto;
+  margin: 0 auto;
 
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+  height: 40px;
+
   line-height: 2.5em;
 
   background-color: $secondary-color;
   color: #ffffff;
 }
 
-.promo-block__can-image {
-  padding-top: 30px;
-  padding-bottom: 3px;
-}
-
 .promo-block__intro,
 .promo-block__slogan {
-  padding: 0 40px;
-  text-align: center;
   font-family: "Oswald", sans-serif;
   line-height: 1;
 }
 
 .promo-block__intro {
+  margin: 0;
   font-size: 36px;
 }
 
 .promo-block__slogan {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
   font-size: 14px;
   text-transform: uppercase;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .promo-block {
-    background: none;
+    min-height: 865px;
+
+    text-align: left;
   }
 
   .promo-block__wrapper {
-    flex-basis: 100%;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .promo-block {
-    position: relative;
+    padding: 45px 30px 0 120px;
   }
 
-  .promo-block__info {
-    width: auto;
-    z-index: 1;
+  .promo-block::before {
+    background: unset;
   }
 
-  .promo-block__can-image {
+  .promo-block__can-image-place {
+    position: absolute;
+
+    left: 0;
+    bottom: 5px;
     width: 709px;
     height: 609px;
-    content: url("../../img/index-can-tablet@1x.jpg");
+
+
+    margin: auto;
+
+    z-index: -1;
+  }
+
+  .promo-block__can-image-place img {
+    width: 709px;
+    height: 609px;
   }
 
   .promo-block__intro,
   .promo-block__slogan {
     color: #111111;
-    text-align: left;
-    padding: 0 115px;
   }
 
   .promo-block__intro {
@@ -94,50 +105,42 @@
   }
 
   .promo-block__slogan {
+    padding-top: 43px;
+    padding-bottom: 48px;
+
     font-size: 20px;
   }
 
   .promo-block__program-btn {
-    position: absolute;
-    left: 115px;
+    width: 245px;
+    height: 52px;
+
+    margin: 0;
+
+    font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo-block {
-    background: url("../../img/index-background-desktop@1x.jpg") no-repeat;
-    background-position: top right;
+    position: relative;
+    min-height: 652px;
   }
 
   .promo-block__wrapper {
-    flex-direction: row;
+    padding-top: 100px;
   }
 
-  .promo-block__can-image {
-    margin-top: 0;
-    margin-right: 428px;
-    width: 552px;
-    height: 499px;
-    content: url("../../img/index-can-desktop@1x.png");
-  }
+  .promo-block__can-image-place {
+    margin: unset;
 
-  .promo-block__intro,
-  .promo-block__slogan,
-  .promo-block__can-image {
-    padding: 0 20px;
-  }
-
-  .promo-block__intro,
-  .promo-block__slogan {
-    width: 410px;
-    margin: 0 100px;
-  }
-
-  .promo-block__program-btn {
+    left: calc(50% - 155px);
+    top: 0;
     bottom: 0;
   }
 
-  .promo-block__info {
-    width: 30%;
+  .promo-block__can-image-place img {
+    width: 552px;
+    height: 499px;
   }
 }

@@ -1,43 +1,52 @@
 .form-program {
   display: flex;
   flex-direction: column;
-  margin-bottom: 70px;
+
+  padding: 12px 0;
+
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #111111;
 }
 
+.form-program__title,
+.form-program__subtitle {
+  margin: 0;
+}
+
+.title-with-line {
+  margin-left: 10px;
+}
+
 .form-program__legend {
+  padding-top: 15px;
   margin: 0 auto;
-  padding: 20px;
+
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.14;
 }
 
 .form-program__title {
-  padding-left: 30px;
   font-size: 36px;
   line-height: 1.67;
 }
 
 .form-program__subtitle {
-  max-width: 320px;
-  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
 }
 
 .form-program__order-btn {
-  display: block;
-  flex-grow: 1;
   margin: 0 auto;
+  width: 100%;
+
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
   line-height: 2.5em;
   font-size: 16px;
 
@@ -45,10 +54,56 @@
   color: #ffffff;
 }
 
-.form-program__wrapper {
-  &--radio {
-    border-top: 1px solid $primary-border-color;
-    border-bottom: 1px solid $primary-border-color;
+.form-program__wrapper--header,
+.form-program__footer {
+  padding: 0 20px;
+}
+
+.form-program__footer {
+  text-align: center;
+  padding-top: 24px;
+  margin-bottom: 17px;
+}
+
+.form-program__cat-info {
+  padding-bottom: 15px;
+
+  .fieldset-block__label {
+    padding: 9px 0 5px 0;
+  }
+}
+
+.form-program__radio {
+  padding-top: 8px;
+  padding-bottom: 21px;
+
+  border-top: 1px solid $primary-border-color;
+  border-bottom: 1px solid $primary-border-color;
+
+  .fieldset-block__label {
+    padding: 13px 0 0 0;
+  }
+
+  .fieldset-block__value {
+    margin: 0;
+    margin-right: 17px;
+  }
+}
+
+.form-program__user-contacts {
+  .fieldset-block__label {
+    padding: 12px 0 0 0;
+  }
+}
+
+.form-program__other {
+  .fieldset-block__label {
+    padding: 11px 0 0 0;
+  }
+
+  .fieldset-block__value {
+    margin: 0;
+    margin-right: 17px;
   }
 }
 
