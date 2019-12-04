@@ -38,7 +38,7 @@
 
   <main class="page-main">
     <section class="product-catalog container">
-      <h2 class="product-catalog__title container">Каталог продукции</h2>
+      <h2 class="product-catalog__title">Каталог продукции</h2>
       <ul class="product-catalog__list">
         <li class="product-catalog__item">
           <div class="product-catalog__item-wrapper">
@@ -52,7 +52,7 @@
             </div>
             <div class="product-catalog__info-wrapper">
               <p class="product-catalog__name">Cat Energy <br>
-                PRO 500 г</p>
+                PRO <span class="product-catalog__count">500 г</span></p>
               <ul class="product-catalog__info">
                 <li class="product-catalog__info-item">
                   <p class="product-catalog__field">Объём</p>
@@ -83,7 +83,7 @@
             </div>
             <div class="product-catalog__info-wrapper">
               <p class="product-catalog__name">Cat Energy<br>
-                PRO 1000 г</p>
+                PRO <span class="product-catalog__count">1000 г</span></p>
               <ul class="product-catalog__info">
                 <li class="product-catalog__info-item">
                   <p class="product-catalog__field">Объём</p>
@@ -114,7 +114,7 @@
             </div>
             <div class="product-catalog__info-wrapper">
               <p class="product-catalog__name">Cat Energy<br>
-                PRO 500 г</p>
+                PRO <span class="product-catalog__count">500 г</span></p>
               <ul class="product-catalog__info">
                 <li class="product-catalog__info-item">
                   <p class="product-catalog__field">Объём</p>
@@ -145,7 +145,7 @@
             </div>
             <div class="product-catalog__info-wrapper">
               <p class="product-catalog__name">Cat Energy<br>
-                PRO 1000 г</p>
+                PRO <span class="product-catalog__count">1000 г</span></p>
               <ul class="product-catalog__info">
                 <li class="product-catalog__info-item">
                   <p class="product-catalog__field">Объём</p>
@@ -176,7 +176,7 @@
             </div>
             <div class="product-catalog__info-wrapper">
               <p class="product-catalog__name">Cat Energy<br>
-                SLIM 500 г</p>
+                SLIM <span class="product-catalog__count">500 г</span></p>
               <ul class="product-catalog__info">
                 <li class="product-catalog__info-item">
                   <p class="product-catalog__field">Объём</p>
@@ -197,15 +197,17 @@
         </li>
         <li class="product-catalog__item">
           <div class="product-catalog__item-wrapper">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="./img/buckwheat-big-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="./img/buckwheat-big-tablet@1x.png">
-              <img class="product-catalog__image product-catalog__image--buckwheat-big"
-                src="./img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Buckwheat Big">
-            </picture>
+            <div class="product-catalog__picture">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/buckwheat-big-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="./img/buckwheat-big-tablet@1x.png">
+                <img class="product-catalog__image product-catalog__image--buckwheat-big"
+                  src="./img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Buckwheat Big">
+              </picture>
+            </div>
             <div class="product-catalog__info-wrapper">
               <p class="product-catalog__name">Cat Energy<br>
-                SLIM 500 г</p>
+                SLIM <span class="product-catalog__count">1000 г</span></p>
               <ul class="product-catalog__info">
                 <li class="product-catalog__info-item">
                   <p class="product-catalog__field">Объём</p>
@@ -226,14 +228,16 @@
         </li>
         <li class="product-catalog__item">
           <div class="product-catalog__item-wrapper">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="./img/rice-small-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="./img/rice-small-tablet@1x.png">
-              <img class="product-catalog__image product-catalog__image--rice-small"
-                src="./img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Rice">
-            </picture>
+            <div class="product-catalog__picture">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/rice-small-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="./img/rice-small-tablet@1x.png">
+                <img class="product-catalog__image product-catalog__image--rice-small"
+                  src="./img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Rice">
+              </picture>
+            </div>
             <div class="product-catalog__info-wrapper">
-              <p class="product-catalog__name">Cat Energy <br>SLIM 500 г</p>
+              <p class="product-catalog__name">Cat Energy <br>SLIM <span class="product-catalog__count">500 г</span></p>
               <ul class="product-catalog__info">
                 <li class="product-catalog__info-item">
                   <p class="product-catalog__field">Объём</p>
@@ -252,10 +256,10 @@
             <a href="#" class="product-catalog__order-btn button">Заказать</a>
           </div>
         </li>
-        <li class="product-catalog__item">
-          <div class="product-catalog__item-wrapper">
+        <li class="product-catalog__item product-catalog__item--more-block">
+          <div class="product-catalog__item-wrapper product-catalog__item-wrapper--more-block">
             <div class="product-catalog__more-block more-block">
-              <a href="#" class="more-block__plus">+</a>
+              <a href="#" class="more-block__plus"></a>
               <p class="more-block__title">Показать еще 100500 товаров</p>
               <p class="more-block__subtitle">На самом деле вкусов гораздо больше!</p>
             </div>
@@ -264,7 +268,7 @@
         </li>
       </ul>
     </section>
-    <section class="other-block container">
+    <section class="other-block">
       <div class="other-block__title-wrapper">
         <div class="other-block__line-before"></div>
         <h2 class="other-block__title">
@@ -272,7 +276,7 @@
         </h2>
         <div class="other-block__line-after"></div>
       </div>
-      <ul class="other-block__list">
+      <ul class="other-block__list container">
         <li class="other-block__item">
           <p class="other-block__name">Сахарозаменитель</p>
           <ul class="other-block__info info-list">
@@ -310,7 +314,7 @@
         </li>
 
       </ul>
-      <div class="present">
+      <div class="present container">
         <div class="present__wrapper">
           <p class="present__present-image"></p>
           <p class="present__title">Закажите все

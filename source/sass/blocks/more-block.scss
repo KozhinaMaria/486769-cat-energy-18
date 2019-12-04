@@ -2,16 +2,18 @@
   margin: 0 auto;
 }
 
-.more-block__plus {
+.more-block__plus::before {
+  content: "";
   display: block;
+
+  background-image: url("../../img/icon-plus.svg");
+  background-repeat: no-repeat;
+
   width: 31px;
   height: 31px;
   margin: 0 auto;
-  margin-top: 27px;
+
   opacity: 0.3;
-  color: transparent;
-  border: none;
-  background: url("../img/icon-plus-mobile.svg") no-repeat;
 }
 
 .more-block__title {
@@ -50,4 +52,30 @@
 .more-block__title,
 .more-block__subtitle {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .more-block {
+    padding: 54px 38px;
+    text-align: center;
+  }
+
+  .more-block__title {
+    padding-top: 48px;
+    padding-bottom: 24px;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .more-block__subtitle {
+    padding-bottom: 32px;
+
+    font-size: 16px;
+  }
+
+  .more-block__plus::before {
+    width: 61px;
+    height: 61px;
+  }
 }
