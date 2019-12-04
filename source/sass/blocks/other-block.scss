@@ -1,14 +1,17 @@
 .other-block {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  min-width: 300px;
+  padding-top: 28px;
+
   border-top: 1px solid $primary-border-color;
+}
+
+.other-block__wrapper {
+  padding: 0 20px;
 }
 
 .other-block__title-wrapper {
   display: flex;
   align-items: center;
+  padding-bottom: 35px;
 }
 
 .other-block__list {
@@ -17,10 +20,11 @@
 }
 
 .other-block__title {
+  margin: 0;
   position: relative;
   font-size: 24px;
   line-height: 1;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .other-block__line-after {
@@ -30,7 +34,8 @@
 }
 
 .other-block__name {
-  flex-basis: 100%;
+  margin: 0;
+
   font-size: 16px;
   line-height: 1;
 }
@@ -53,12 +58,7 @@
 }
 
 .other-block__order-btn {
-  display: block;
-  flex-basis: 100%;
-  margin: 20px auto;
-
-  text-align: center;
-  text-decoration: none;
+  font-size: 16px;
   line-height: 2.5em;
 
   background-color: $secondary-color;
@@ -66,9 +66,8 @@
 }
 
 .other-block__item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  padding-top: 13px;
+  padding-bottom: 17px;
   border-bottom: 1px solid $primary-border-color;
 
   &:first-child {
@@ -76,29 +75,10 @@
   }
 }
 
-.other-block__info {
-  flex-basis: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
 @media (min-width: $tablet-width) {
   .other-block__item {
-    padding: 30px 40px;
     border-left: 1px solid $primary-border-color;
     border-right: 1px solid $primary-border-color;
-  }
-
-  .other-block__info {
-    align-items: center;
-    justify-content: space-between;
-    flex-basis: 40%;
-    flex-grow: 1;
-  }
-
-  .other-block__name {
-    flex-basis: 40%;
-    flex-grow: 1;
   }
 
   .other-block__line-before {
@@ -112,29 +92,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .other-block {
-    flex-direction: row;
-    margin-bottom: 80px;
-  }
+  .other-block {}
 
   .other-block__title-wrapper {
     flex-basis: 100%;
   }
 
-  .other-block__list {
-    flex-basis: 70%;
-  }
+  .other-block__list {}
 
-  .other-block__item {
-    align-items: center;
-    padding: 0;
-    flex-wrap: nowrap;
-    border-left: none;
-    border-right: none;
-  }
+  .other-block__item {}
 
-  .other-block__order-btn {
-    max-width: 245px;
-    margin: 20px;
-  }
+  .other-block__order-btn {}
 }
