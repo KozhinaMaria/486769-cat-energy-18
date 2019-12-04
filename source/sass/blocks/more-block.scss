@@ -79,3 +79,14 @@
     height: 61px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .more-block {
+    padding: 0;
+    padding-top: 54px;
+  }
+
+  .more-block__subtitle {
+    padding-bottom: 87px;
+  }
+}

@@ -177,7 +177,7 @@
   .product-catalog__picture {
     position: absolute;
     bottom: 300px;
-    left: 0;
+    left: calc(50% - 159px);
     right: auto;
     margin: 0 auto;
   }
@@ -188,7 +188,29 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .product-catalog__item {}
+@media (min-width: $desktop-width) {
+  .product-catalog {
+    padding: 0 40px;
+  }
 
-// }
+  .product-catalog__title {
+    padding-top: 63px;
+  }
+
+  .product-catalog__item {
+    flex-basis: unset;
+    width: 245px;
+  }
+
+  .product-catalog__picture {
+    left: 0;
+    right: 0;
+  }
+
+
+  .product-catalog__item-wrapper {
+    &--more-block {
+      padding: 0 35px;
+    }
+  }
+}
