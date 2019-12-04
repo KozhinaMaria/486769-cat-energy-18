@@ -91,16 +91,5 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .other-block {}
-
-  .other-block__title-wrapper {
-    flex-basis: 100%;
-  }
-
-  .other-block__list {}
-
-  .other-block__item {}
-
-  .other-block__order-btn {}
-}
+// @media (min-width: $desktop-width) {
+// }
