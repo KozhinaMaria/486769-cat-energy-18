@@ -36,14 +36,14 @@
   </header>
 
   <main class="page-main ">
-    <form class="form-program container" action="https://echo.htmlacademy.ru">
-      <div class="form-program__wrapper form-program__wrapper--header">
+    <form class="form-program" action="https://echo.htmlacademy.ru">
+      <div class="form-program__wrapper form-program__wrapper--header container">
         <p class="form-program__title">Подбор программы</p>
         <p class="form-program__subtitle">Заполните анкету и мы подберем <br>
           программу питания для вашего кота</p>
       </div>
 
-      <div class="form-program__wrapper-info">
+      <div class="form-program__wrapper-info container">
         <fieldset class="form-program__cat-info fieldset-block">
           <div class="form-program__wrapper">
             <label class="fieldset-block__label">
@@ -61,7 +61,6 @@
             </label>
           </div>
         </fieldset>
-
         <fieldset class="form-program__radio fieldset-block">
           <div class="form-program__wrapper form-program__wrapper--radio">
             <label class="fieldset-block__label">
@@ -81,17 +80,15 @@
             </label>
           </div>
         </fieldset>
-
       </div>
-      <div class="fieldset-block__legend title-with-line">
-        <div class="title-with-line__before"></div>
-        <p class="fieldset-block__legend-title title-with-line__title">
-          Контактные данные (владельца кота)
-        </p>
-        <div class="title-with-line__after"></div>
-      </div>
-      <fieldset class="form-program__user-contacts fieldset-block container">
-        <div class="form-program__wrapper">
+      <fieldset class="form-program__user-contacts fieldset-block">
+        <div class="header-line"></div>
+        <div class="container">
+          <p class="fieldset-block__legend">
+            Контактные данные (владельца кота)
+          </p>
+        </div>
+        <div class="form-program__wrapper container">
           <label class="fieldset-block__label">
             E-mail:<sup class="required-asterix">*</sup> <input
               class="fieldset-block__value fieldset-block__value--text" type="email" name="email"
@@ -104,31 +101,30 @@
           </label>
         </div>
       </fieldset>
+      <fieldset class="form-program__comments fieldset-block">
+        <div class="header-line"></div>
+        <div class="container">
+          <p class="fieldset-block__legend">
+            Комментарий
+          </p>
+        </div>
 
-      <div class="fieldset-block__legend title-with-line">
-        <div class="title-with-line__before"></div>
-        <p class="fieldset-block__legend-title title-with-line__title">
-          Комментарий
-        </p>
-        <div class="title-with-line__after"></div>
-      </div>
-      <fieldset class="form-program__comments fieldset-block container">
-        <div class="form-program__wrapper">
+        <div class="form-program__wrapper container">
           <textarea class="fieldset-block__textareas fieldset-block__value--textarea" rows="4" cols="50" name="comment">
             Расскажите обо всех повадках кота
         </textarea>
         </div>
       </fieldset>
 
-      <div class="fieldset-block__legend title-with-line">
-        <div class="title-with-line__before"></div>
-        <p class="fieldset-block__legend-title title-with-line__title">
-          Дополнительно
-        </p>
-        <div class="title-with-line__after"></div>
-      </div>
       <fieldset class="form-program__other fieldset-block">
-        <div class="form-program__wrapper">
+        <div class="header-line"></div>
+        <div class="container">
+          <p class="fieldset-block__legend">
+            Дополнительно
+          </p>
+        </div>
+
+        <div class="form-program__wrapper container">
           <div class="form-program__other-wrapper">
             <label class="fieldset-block__label fieldset-block__label--checkbox">
               <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
@@ -151,7 +147,7 @@
         </div>
       </fieldset>
 
-      <div class="form-program__footer">
+      <div class="form-program__footer container">
         <input class="form-program__order-btn button" type="submit" value="Отправить заявку"></input>
         <p class="form-program__legend form-program__legend--bottom">
           <sup class="required-asterix">*</sup> — Обязательные поля
