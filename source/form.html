@@ -21,14 +21,14 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list site-list--default">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item ">
             <a class="site-list__link" href="/">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -48,12 +48,12 @@
           <div class="form-program__wrapper">
             <label class="fieldset-block__label">
               Имя:<sup class="required-asterix">*</sup> <input class="fieldset-block__value fieldset-block__value--text"
-                type="text" id="catName" name="catName" value="Барсик">
+                type="text" id="catName" name="catName" value="Барсик" required>
             </label>
             <label class="fieldset-block__label">
               Вес (кг):<sup class="required-asterix">*</sup> <input
                 class="fieldset-block__value fieldset-block__value--text" type="text" id="catWeight" name="catWeight"
-                value="7">
+                value="7" required>
             </label>
             <label class="fieldset-block__label">
               Возраст (лет): <input class="fieldset-block__value fieldset-block__value--text" type="text" id="catAge"
@@ -63,20 +63,24 @@
         </fieldset>
         <fieldset class="form-program__radio fieldset-block">
           <div class="form-program__wrapper form-program__wrapper--radio">
-            <label class="fieldset-block__label">
+            <label class="fieldset-block__label fieldset-block__label--radio">
               <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal"
-                value="loseWeight" checked> Похудение
+                value="loseWeight" checked>
+              <span class="fieldset-block__name">Похудение</span>
+              <span class="fieldset-block__radio-checkmark"></span>
             </label>
-            <label class="fieldset-block__label">
+            <label class="fieldset-block__label fieldset-block__label--radio">
               <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal"
-                value="putonWeight"> Набор
-              массы
+                value="putonWeight">
+              <span class="fieldset-block__name">Набор массы</span>
+              <span class="fieldset-block__radio-checkmark"></span>
             </label>
-            <label class="fieldset-block__label">
+            <label class="fieldset-block__label fieldset-block__label--radio">
               <input class="fieldset-block__value fieldset-block__value--radio" type="radio" name="goal" value="other">
-              Не
-              знаю
-              (Нужен ваш совет)
+              <span class="fieldset-block__name">Не
+                знаю
+                (Нужен ваш совет)</span>
+              <span class="fieldset-block__radio-checkmark"></span>
             </label>
           </div>
         </fieldset>
@@ -92,12 +96,12 @@
           <label class="fieldset-block__label">
             E-mail:<sup class="required-asterix">*</sup> <input
               class="fieldset-block__value fieldset-block__value--text" type="email" name="email"
-              value="kuklachev@gmail.com">
+              value="kuklachev@gmail.com" required>
           </label>
           <label class="fieldset-block__label">
             Телефон:<sup class="required-asterix">*</sup> <input
-              class="fieldset-block__value fieldset-block__value--text" type="text" name="phone"
-              value="8 (960) 900-60-90">
+              class="fieldset-block__value fieldset-block__value--text" type="tel" name="phone"
+              value="8 (960) 900-60-90" required>
           </label>
         </div>
       </fieldset>
@@ -126,21 +130,29 @@
 
         <div class="form-program__wrapper form-program__wrapper--other container">
           <label class="fieldset-block__label fieldset-block__label--checkbox">
+
             <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
               value="sweetener" checked>
-            Сахарозаменитель
+            <span class="fieldset-block__checkmark"></span>
+            <span class="fieldset-block__name">Сахарозаменитель</span>
           </label>
           <label class="fieldset-block__label fieldset-block__label--checkbox">
             <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
-              value="water">Питьевая вода
+              value="water">
+            <span class="fieldset-block__checkmark"></span>
+            <span class="fieldset-block__name">Питьевая вода</span>
+          </label>
+          <label class="fieldset-block__label fieldset-block__label--checkbox">Молоко
+            <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
+              value="milk">
+            <span class="fieldset-block__checkmark"></span>
+            <span class="fieldset-block__name">Молоко</span>
           </label>
           <label class="fieldset-block__label fieldset-block__label--checkbox">
             <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
-              value="milk"> Молоко
-          </label>
-          <label class="fieldset-block__label fieldset-block__label--checkbox">
-            <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
-              value="vitamin"> Витамины
+              value="vitamin">
+            <span class="fieldset-block__checkmark"></span>
+            <span class="fieldset-block__name">Витамины</span>
           </label>
         </div>
       </fieldset>

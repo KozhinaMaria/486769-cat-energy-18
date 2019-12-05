@@ -7,6 +7,147 @@
   color: #222222;
 }
 
+/*CHECKBOX*/
+/* The container */
+.fieldset-block__label.fieldset-block__label--checkbox {
+  display: block;
+  position: relative;
+  padding-left: 56px;
+  padding-top: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.fieldset-block__label.fieldset-block__label--checkbox .fieldset-block__value--checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.fieldset-block__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: solid 1px #cdcdcd;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.fieldset-block__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.fieldset-block__value--checkbox:checked~.fieldset-block__checkmark:after {
+  display: block;
+}
+
+.fieldset-block__value--checkbox:active~.fieldset-block__checkmark {
+  border: solid 1px #bababa;
+  opacity: 0.3;
+}
+
+.fieldset-block__value--checkbox:active~.fieldset-block__name {
+  opacity: 0.3;
+}
+
+/* On mouse-over, add a grey background color */
+.fieldset-block__label.fieldset-block__label--checkbox:hover input~.fieldset-block__checkmark {
+  border: solid 1px #bababa;
+}
+
+/* Style the checkmark/indicator */
+.fieldset-block__label.fieldset-block__label--checkbox .fieldset-block__checkmark:after {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.7);
+
+  background: url(../../img/icon-tick.svg) no-repeat;
+}
+
+/*CHECKBOX END*/
+
+/*RADIO*/
+/* The container */
+.fieldset-block__label.fieldset-block__label--radio {
+  display: block;
+  position: relative;
+  padding-left: 56px;
+  padding-top: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio */
+.fieldset-block__label.fieldset-block__label--radio .fieldset-block__value--radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio */
+.fieldset-block__radio-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: solid 1px #cdcdcd;
+  border-radius: 50%;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.fieldset-block__radio-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.fieldset-block__value--radio:checked~.fieldset-block__radio-checkmark:after {
+  display: block;
+}
+
+.fieldset-block__value--radio:active~.fieldset-block__radio-checkmark {
+  border: solid 1px #bababa;
+  opacity: 0.3;
+}
+
+.fieldset-block__value--radio:active~.fieldset-block__name {
+  opacity: 0.3;
+}
+
+/* On mouse-over, add a grey background color */
+.fieldset-block__label.fieldset-block__label--radio:hover input~.fieldset-block__radio-checkmark {
+  border: solid 1px #bababa;
+}
+
+/* Style the checkmark/indicator */
+.fieldset-block__label.fieldset-block__label--radio .fieldset-block__radio-checkmark:after {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.5);
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+/*RADIO END*/
+
 .fieldset-block__label {
   display: flex;
   align-items: center;
@@ -27,8 +168,23 @@
 
   width: auto;
   height: 45px;
-  opacity: 0.5;
-  border: solid 1px #cdcdcd;
+  border: solid 1px rgba(205, 205, 205, 0.5);
+  outline: none;
+}
+
+.fieldset-block__value--text,
+.fieldset-block__textareas {
+  &:hover {
+    border: solid 1px #cdcdcd;
+  }
+
+  &:focus {
+    border: solid 2px #444444;
+  }
+
+  &:invalid {
+    border: solid 2px #ff8282;
+  }
 }
 
 .fieldset-block__value {
@@ -102,8 +258,6 @@
 
     &--radio,
     &--checkbox {
-      width: 40px;
-      height: 40px;
 
       margin-right: 18px;
     }
