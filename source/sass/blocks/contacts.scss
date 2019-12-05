@@ -4,6 +4,10 @@
   padding: 32px 24px 20px 18px;
 
   background-color: #ffffff;
+
+  &--default {
+    background-color: #f3f3f3;
+  }
 }
 
 .contacts__text {

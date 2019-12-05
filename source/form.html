@@ -88,7 +88,7 @@
             Контактные данные (владельца кота)
           </p>
         </div>
-        <div class="form-program__wrapper container">
+        <div class="form-program__wrapper form-program__wrapper--user-info container">
           <label class="fieldset-block__label">
             E-mail:<sup class="required-asterix">*</sup> <input
               class="fieldset-block__value fieldset-block__value--text" type="email" name="email"
@@ -109,7 +109,7 @@
           </p>
         </div>
 
-        <div class="form-program__wrapper container">
+        <div class="form-program__wrapper form-program__wrapper--comments container">
           <textarea class="fieldset-block__textareas fieldset-block__value--textarea" rows="4" cols="50" name="comment">
             Расскажите обо всех повадках кота
         </textarea>
@@ -124,26 +124,24 @@
           </p>
         </div>
 
-        <div class="form-program__wrapper container">
-          <div class="form-program__other-wrapper">
-            <label class="fieldset-block__label fieldset-block__label--checkbox">
-              <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
-                value="sweetener" checked>
-              Сахарозаменитель
-            </label>
-            <label class="fieldset-block__label fieldset-block__label--checkbox">
-              <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
-                value="water">Питьевая вода
-            </label>
-            <label class="fieldset-block__label fieldset-block__label--checkbox">
-              <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
-                value="milk"> Молоко
-            </label>
-            <label class="fieldset-block__label fieldset-block__label--checkbox">
-              <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
-                value="vitamin"> Витамины
-            </label>
-          </div>
+        <div class="form-program__wrapper form-program__wrapper--other container">
+          <label class="fieldset-block__label fieldset-block__label--checkbox">
+            <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
+              value="sweetener" checked>
+            Сахарозаменитель
+          </label>
+          <label class="fieldset-block__label fieldset-block__label--checkbox">
+            <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
+              value="water">Питьевая вода
+          </label>
+          <label class="fieldset-block__label fieldset-block__label--checkbox">
+            <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
+              value="milk"> Молоко
+          </label>
+          <label class="fieldset-block__label fieldset-block__label--checkbox">
+            <input class="fieldset-block__value fieldset-block__value--checkbox" type="checkbox" name="composition"
+              value="vitamin"> Витамины
+          </label>
         </div>
       </fieldset>
 
@@ -159,7 +157,7 @@
   <footer class="page-footer">
 
     <section class="page-footer__map map">
-      <div class="map__contacts contacts">
+      <div class="map__contacts contacts contacts--default">
         <p class="contacts__text">приглашаем<br>
           к сотрудничеству<br>
           дилеров!</p>
