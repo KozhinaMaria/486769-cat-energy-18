@@ -7,6 +7,14 @@
   padding-top: 11px;
   padding-left: 20px;
   padding-bottom: 15px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo img {
