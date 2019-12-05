@@ -75,3 +75,42 @@
 .fieldset-block__legend-title {
   margin: 0;
 }
+
+
+@media (min-width: $tablet-width) {
+  .fieldset-block__label {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .fieldset-block__legend {
+    padding: 0 70px;
+
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .fieldset-block__value,
+  .fieldset-block__textareas {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .fieldset-block__value {
+    height: 52px;
+
+    &--radio,
+    &--checkbox {
+      width: 40px;
+      height: 40px;
+
+      margin-right: 18px;
+    }
+
+    &--textarea {
+      height: 174px;
+    }
+  }
+}

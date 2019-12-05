@@ -106,33 +106,120 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form-program {}
+
+  .form-program__footer,
+  .form-program__wrapper {
+    padding: 0;
+    margin: 0 30px;
+  }
+
+  .form-program__footer {
+    display: flex;
+    padding: 20px 40px 78px 40px;
+  }
+
+  .form-program__order-btn {
+    width: 283px;
+    height: 52px;
+  }
+
+  .form-program__wrapper-info {
+    padding: 0 40px;
+  }
+
+  .form-program__title {
+    padding-top: 48px;
+
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .form-program__subtitle {
+    padding: 55px 40px 65px 40px;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .form-program__legend {
+    margin-left: 63px;
+
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .form-program__order-btn {
+    font-size: 20px;
+  }
+
+  .form-program__radio {
+    border: unset;
+  }
 
   .form-program__wrapper {
-
     &--radio {
+      padding: 23px 30px 10px 30px;
+
       border: solid 1px #cdcdcd;
+
+      .fieldset-block__label {
+        margin-bottom: 13px;
+      }
+    }
+
+    &--user-info {
+      padding: 73px 40px 0 40px;
+    }
+
+    &--comments {
+      padding: 76px 40px 0 40px;
+    }
+
+    &--other {
+      margin: 0;
+      padding: 54px 20px 0 55px;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .fieldset-block__label {
+        margin-bottom: 33px;
+
+        flex-basis: 46%;
+      }
+
     }
   }
 
-  .form-program__other-wrapper {}
+  .form-program__radio {
+    padding-top: 53px;
+  }
 
-  .form-program__footer {}
+  .form-program__user-contacts {
+    padding-top: 77px;
 
-  .form-program__order-btn {}
+    .header-line {
+      top: 98px;
+    }
+  }
 
-  .fieldset-block__label--checkbox {}
+  .form-program__comments {
+    padding-top: 45px;
 
-  .form-program__other {}
+    .header-line {
+      top: 68px;
+    }
+  }
+
+  .form-program__other {
+    padding-top: 63px;
+
+    .header-line {
+      top: 84px;
+    }
+  }
 }
 
 
-@media (min-width: $desktop-width) {
-  .form-program__wrapper--header {}
-
-  .form-program {}
-
-  .fieldset-block__label--checkbox {}
-
-  .form-program__subtitle {}
-}
+@media (min-width: $desktop-width) {}
