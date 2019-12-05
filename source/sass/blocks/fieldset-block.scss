@@ -15,9 +15,6 @@
   padding-left: 56px;
   padding-top: 8px;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -41,38 +38,38 @@
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.fieldset-block__checkmark:after {
+.fieldset-block__checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-.fieldset-block__value--checkbox:checked~.fieldset-block__checkmark:after {
+.fieldset-block__value--checkbox:checked ~ .fieldset-block__checkmark::after {
   display: block;
 }
 
-.fieldset-block__value--checkbox:active~.fieldset-block__checkmark {
+.fieldset-block__value--checkbox:active ~ .fieldset-block__checkmark {
   border: solid 1px #bababa;
   opacity: 0.3;
 }
 
-.fieldset-block__value--checkbox:active~.fieldset-block__name {
+.fieldset-block__value--checkbox:active ~ .fieldset-block__name {
   opacity: 0.3;
 }
 
 /* On mouse-over, add a grey background color */
-.fieldset-block__label.fieldset-block__label--checkbox:hover input~.fieldset-block__checkmark {
+.fieldset-block__label.fieldset-block__label--checkbox:hover input ~ .fieldset-block__checkmark {
   border: solid 1px #bababa;
 }
 
 /* Style the checkmark/indicator */
-.fieldset-block__label.fieldset-block__label--checkbox .fieldset-block__checkmark:after {
+.fieldset-block__label.fieldset-block__label--checkbox .fieldset-block__checkmark::after {
   width: 100%;
   height: 100%;
   transform: scale(0.7);
 
-  background: url(../../img/icon-tick.svg) no-repeat;
+  background: url("../../img/icon-tick.svg") no-repeat;
 }
 
 /*CHECKBOX END*/
@@ -85,9 +82,6 @@
   padding-left: 56px;
   padding-top: 8px;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -112,33 +106,33 @@
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.fieldset-block__radio-checkmark:after {
+.fieldset-block__radio-checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-.fieldset-block__value--radio:checked~.fieldset-block__radio-checkmark:after {
+.fieldset-block__value--radio:checked ~ .fieldset-block__radio-checkmark::after {
   display: block;
 }
 
-.fieldset-block__value--radio:active~.fieldset-block__radio-checkmark {
+.fieldset-block__value--radio:active ~ .fieldset-block__radio-checkmark {
   border: solid 1px #bababa;
   opacity: 0.3;
 }
 
-.fieldset-block__value--radio:active~.fieldset-block__name {
+.fieldset-block__value--radio:active ~ .fieldset-block__name {
   opacity: 0.3;
 }
 
 /* On mouse-over, add a grey background color */
-.fieldset-block__label.fieldset-block__label--radio:hover input~.fieldset-block__radio-checkmark {
+.fieldset-block__label.fieldset-block__label--radio:hover input ~ .fieldset-block__radio-checkmark {
   border: solid 1px #bababa;
 }
 
 /* Style the checkmark/indicator */
-.fieldset-block__label.fieldset-block__label--radio .fieldset-block__radio-checkmark:after {
+.fieldset-block__label.fieldset-block__label--radio .fieldset-block__radio-checkmark::after {
   width: 100%;
   height: 100%;
   transform: scale(0.5);
