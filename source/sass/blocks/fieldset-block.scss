@@ -190,15 +190,19 @@
 
   &--text {
     flex-grow: 1;
-    margin-left: 15px;
-    padding-left: 20px;
+    margin-left: 16px;
+    padding-left: 15px;
+    padding-bottom: 3px;
   }
 
   &--email {
     background-image: url("../../img/icon-mail.svg");
-    background-position: right 19px bottom 16px;
+    background-position: right 16px bottom 16px;
     background-repeat: no-repeat;
-    background-size: 18px;
+    background-size: 15px;
+
+    margin-left: 11px;
+    padding-left: 14px;
 
     &:focus {
       background-image: url("../../img/icon-mail-green.svg");
@@ -211,9 +215,12 @@
 
   &--tel {
     background-image: url("../../img/icon-phone.svg");
-    background-position: right 19px bottom 17px;
+    background-position: right 14px bottom 11px;
     background-repeat: no-repeat;
     background-size: 18px;
+
+    margin-left: 11px;
+    padding-left: 14px;
   }
 
   &--checkbox {
@@ -232,6 +239,7 @@
   &--textarea {
     width: 100%;
     height: 150px;
+    padding: 13px;
   }
 }
 
@@ -277,7 +285,9 @@
   }
 
   .fieldset-block__legend {
-    padding: 0 70px;
+    padding-left: 21px;
+    padding-right: 43px;
+    margin-left: 48px;
 
     font-size: 36px;
     line-height: 1;
@@ -292,6 +302,20 @@
   .fieldset-block__value {
     height: 52px;
 
+    &--text {
+      margin-left: 20px;
+      padding-left: 18px;
+    }
+
+    &--email {
+      margin-left: 20px;
+      padding-left: 22px;
+    }
+
+    &--tel {
+      margin-left: 16px;
+    }
+
     &--radio,
     &--checkbox {
       margin-right: 18px;
@@ -299,6 +323,34 @@
 
     &--textarea {
       height: 174px;
+      padding: 12px 18px;
     }
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .fieldset-block__value {
+    &--email {
+      width: 486px;
+      margin-left: 22px;
+      padding-left: 20px;
+
+      background-position: right 18px bottom 19px;
+      background-size: 17px;
+    }
+
+    &--tel {
+      width: 472px;
+      margin-left: 17px;
+      padding-left: 20px;
+      background-position: right 20px bottom 16px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-block__legend {
+    margin-left: 0;
   }
 }

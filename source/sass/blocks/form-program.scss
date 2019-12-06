@@ -11,15 +11,15 @@
 }
 
 .form-program__footer {
-  padding-bottom: 15px;
-  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-top: 13px;
 
   text-align: center;
 }
 
 .form-program__wrapper {
   &--radio {
-    padding-top: 22px;
+    padding-top: 23px;
   }
 
   &--user-info {
@@ -31,7 +31,7 @@
   }
 
   &--other {
-    padding-top: 30px;
+    padding-top: 32px;
   }
 }
 
@@ -55,7 +55,7 @@
 
 .form-program__subtitle {
   padding-top: 26px;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
 
   font-size: 14px;
   line-height: 1.29;
@@ -119,15 +119,15 @@
     }
 
     &--user-info {
-      padding: 73px 40px 0 40px;
+      padding: 75px 40px 0 40px;
     }
 
     &--comments {
-      padding: 76px 40px 0 40px;
+      padding: 78px 40px 0 40px;
     }
 
     &--other {
-      padding: 54px 0 0 28px;
+      padding: 54px 0 0 24px;
 
       display: flex;
       flex-wrap: wrap;
@@ -136,7 +136,7 @@
       .fieldset-block__label {
         margin-bottom: 45px;
 
-        flex-basis: 46%;
+        flex-basis: 45%;
       }
     }
   }
@@ -144,7 +144,7 @@
   .form-program__footer {
     display: flex;
     margin: 0 30px;
-    padding: 22px 40px 78px 40px;
+    padding: 18px 40px 78px 40px;
   }
 
   .form-program__order-btn {
@@ -211,7 +211,7 @@
 
 @media (min-width: $desktop-width) {
   .form-program__footer {
-    padding: 27px 40px 78px 40px;
+    padding: 26px 40px 89px 40px;
 
     .form-program__order-btn {
       width: 568px;
@@ -228,7 +228,6 @@
   }
 
   .form-program__wrapper {
-    // margin: 0;
     padding: 0 40px;
 
     &--comments {
@@ -260,14 +259,14 @@
       padding-top: 75px;
 
       .fieldset-block__value--text {
-        margin-left: 20px;
+        //margin-left: 20px;
       }
 
       .fieldset-block__label {
         flex-grow: 1;
 
         &:last-child {
-          margin-left: 97px;
+          margin-left: 79px;
         }
       }
     }
@@ -295,7 +294,7 @@
 
   .form-program__title {
     padding-left: 0;
-    padding-top: 66px;
+    padding-top: 64px;
   }
 
   .form-program__subtitle {

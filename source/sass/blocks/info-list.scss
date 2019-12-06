@@ -25,3 +25,21 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .info-list {
+    flex-grow: 0;
+    justify-content: unset;
+    width: 32%;
+  }
+
+  .info-list__item {
+    padding-left: 3px;
+    padding-top: 6px;
+  }
+
+  .info-list__item--right {
+    margin-left: auto;
+    margin-right: -4px;
+  }
+}
