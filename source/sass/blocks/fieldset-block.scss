@@ -194,22 +194,22 @@
     padding-left: 20px;
   }
 
-  &--email{
+  &--email {
     background-image: url("../../img/icon-mail.svg");
     background-position: right 19px bottom 16px;
     background-repeat: no-repeat;
     background-size: 18px;
 
-    &:focus{
+    &:focus {
       background-image: url("../../img/icon-mail-green.svg");
     }
 
-    &:invalid{
+    &:invalid {
       background-image: url("../../img/icon-mail-pink.svg");
     }
   }
 
-  &--tel{
+  &--tel {
     background-image: url("../../img/icon-phone.svg");
     background-position: right 19px bottom 17px;
     background-repeat: no-repeat;
@@ -258,7 +258,7 @@
     padding-top: 8px;
   }
 
-  .fieldset-block__label.fieldset-block__label--checkbox  {
+  .fieldset-block__label.fieldset-block__label--checkbox {
     padding-left: 58px;
     padding-top: 8px;
   }
