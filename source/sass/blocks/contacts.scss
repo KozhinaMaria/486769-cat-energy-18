@@ -4,6 +4,14 @@
   padding: 32px 24px 20px 18px;
 
   background-color: #ffffff;
+
+  &--default {
+    background-color: #f3f3f3;
+  }
+}
+
+.contacts__city {
+  display: block;
 }
 
 .contacts__text {
@@ -31,26 +39,33 @@
     padding: 60px 72px 64px 71px;
   }
 
+  .contacts__city {
+    padding-top: 20px;
+  }
+
   .contacts__text {
     font-size: 20px;
     line-height: 1.25;
   }
 
   .contacts__address {
+    padding-bottom: 0;
+    padding-left: 6px;
+
     font-size: 16px;
     line-height: 1.25;
+
     text-align: right;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts__address {
+    text-align: left;
+  }
+
   .contacts {
     padding: 0 45px 0 31px;
     width: 570px;
-  }
-
-  .contacts__address {
-    padding-bottom: 20px;
-    text-align: left;
   }
 }

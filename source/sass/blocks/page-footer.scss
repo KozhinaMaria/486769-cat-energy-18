@@ -22,6 +22,14 @@
   height: 24px;
 
   content: url("../../img/logo-footer.svg");
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__logo-place {
@@ -40,7 +48,8 @@
 }
 
 .page-footer__copyright {
-  padding: 22px 0;
+  //padding: 22px 0;
+  padding: 12px 0;
   width: 100%;
 }
 
@@ -55,11 +64,18 @@
 
   .page-footer__wrapper {
     flex-direction: row;
-    padding: 28px 25px 33px 25px;
+    padding: 26px 25px 31px 26px;
+    //padding: 28px 25px 33px 25px;
   }
 
   .page-footer__logo-place {
     padding: 30px 5px;
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding: 26px 36px 31px 36px;
   }
 }

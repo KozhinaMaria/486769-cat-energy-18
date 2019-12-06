@@ -1,7 +1,12 @@
 .other-block {
+  position: relative;
   padding-top: 28px;
 
   border-top: 1px solid $primary-border-color;
+
+  .header-line {
+    top: 43px;
+  }
 }
 
 .other-block__wrapper {
@@ -21,10 +26,13 @@
 
 .other-block__title {
   margin: 0;
-  position: relative;
   font-size: 24px;
   line-height: 1;
   padding: 0 20px;
+
+  display: inline-block;
+
+  background-color: #ffffff;
 }
 
 .other-block__line-after {
@@ -73,6 +81,10 @@
 @media (min-width: $tablet-width) {
   .other-block {
     padding-top: 65px;
+
+    .header-line {
+      top: calc(10% - 15px);
+    }
   }
 
   .other-block__wrapper {
@@ -102,7 +114,7 @@
   }
 
   .other-block__title {
-    padding: 0 15px;
+    margin-left: 47px;
     font-size: 36px;
     line-height: 1;
   }
@@ -121,6 +133,10 @@
     margin-bottom: 90px;
 
     border-top: unset;
+
+    .header-line {
+      top: 100px;
+    }
   }
 
   .other-block__wrapper {
@@ -128,7 +144,8 @@
   }
 
   .other-block__title {
-    padding: 0 56px;
+    margin-left: 0;
+    padding: 0 38px;
   }
 
   .other-block__list {

@@ -85,6 +85,11 @@
     text-decoration: none;
     color: inherit;
   }
+
+  &:active {
+    opacity: 0.3;
+    color: rgba(17, 17, 17, 1);
+  }
 }
 
 .catalog__link-name::after {
@@ -96,6 +101,13 @@
 
   background: url("../img/icon-right-arrow-long.svg") no-repeat;
   background-size: 25px 12px;
+}
+
+.catalog__link-name:hover::after,
+.catalog__link-name:active::after {
+  width: 34px;
+  height: 12px;
+  background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
 }
 
 @media (min-width: $tablet-width) {

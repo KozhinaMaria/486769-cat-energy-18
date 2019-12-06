@@ -1,7 +1,24 @@
 .button {
   display: block;
+  cursor: pointer;
 
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &--grey-color:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &--grey-color:hover {
+    background-color: #ebebeb;
+  }
 }

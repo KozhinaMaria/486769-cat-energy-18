@@ -7,6 +7,14 @@
   padding-top: 11px;
   padding-left: 20px;
   padding-bottom: 15px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo img {
@@ -22,8 +30,8 @@
   .page-header {
     flex-direction: row;
 
-    padding-right: 33px;
-    padding-top: 20px;
+    padding-right: 30px;
+    padding-top: 22px;
     padding-left: 30px;
   }
 
@@ -35,8 +43,9 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 50px;
-    padding-left: 36px;
+    padding-top: 53px;
+    padding-left: 40px;
+    padding-right: 37px;
   }
 
   .page-header__logo img {
