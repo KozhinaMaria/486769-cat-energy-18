@@ -103,7 +103,7 @@
 
     width: 8px;
     height: 8px;
-    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px #cdcdcd;
+    box-shadow: 0 0 0 12px #ffffff, 0 0 0 13px #cdcdcd, 0 2px 5px 13px #cdcdcd;
   }
 
   /* All the same stuff for Firefox */
@@ -114,7 +114,7 @@
 
     width: 8px;
     height: 8px;
-    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px #cdcdcd;
+    box-shadow: 0 0 0 12px #ffffff, 0 0 0 13px #cdcdcd, 0 2px 5px 13px #cdcdcd;
   }
 
   /* All the same stuff for IE */
@@ -125,8 +125,36 @@
 
     width: 8px;
     height: 8px;
-    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px #cdcdcd;
+    box-shadow: 0 0 0 12px #ffffff, 0 0 0 13px #cdcdcd, 0 2px 5px 13px #cdcdcd;
   }
+
+  .progression__value::-webkit-slider-thumb:hover{
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px rgba(0, 0, 0, 0.25);
+  }
+
+  .progression__value::-ms-thumb:hover{
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px rgba(0, 0, 0, 0.25);
+  }
+
+  .progression__value::-moz-range-thumb:hover{
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px rgba(0, 0, 0, 0.25);
+  }
+
+  .progression__value::-webkit-slider-thumb:active{
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px rgba(0, 0, 0, 0.3),
+    0 0 0 15px  #68b738;
+  }
+
+  .progression__value::-ms-thumb:active{
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px rgba(0, 0, 0, 0.3),
+    0 0 0 15px  #68b738;
+  }
+
+  .progression__value::-moz-range-thumb:active{
+    box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px rgba(0, 0, 0, 0.3),
+    0 0 0 15px  #68b738;
+  }
+
 
   .progression__text {
     font-size: 20px;
