@@ -1,11 +1,6 @@
 @media (min-width: $desktop-width) {
   .page-main__index-bg::before {
     content: "";
-
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-color: #63a639;
-
     position: absolute;
 
     left: auto;
@@ -16,5 +11,15 @@
     height: 696px;
 
     z-index: -1;
+
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+    }
+
+    background-repeat: no-repeat;
+    background-color: #63a639;
+    background-size: cover;
   }
 }
