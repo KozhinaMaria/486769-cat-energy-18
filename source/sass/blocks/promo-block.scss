@@ -8,11 +8,6 @@
 
   &::before {
     content: "";
-
-    background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
-    background-position: top 0 center;
-    background-color: #63a639;
-
     position: absolute;
 
     left: auto;
@@ -23,6 +18,15 @@
     height: 305px;
 
     z-index: -1;
+
+    background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
+    background-position: top 0 center;
+    background-color: #63a639;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 
