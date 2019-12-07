@@ -22,10 +22,10 @@
 }
 
 .no-webp .promo-block::before {
-  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("/img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
   background-position: top 0 center;
@@ -34,10 +34,10 @@
 }
 
 .webp .promo-block::before {
-  background: url("/img/index-background-mobile@1x.webp") no-repeat;
+  background: url("../img/index-background-mobile@1x.webp") no-repeat;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("/img/index-background-mobile@2x.webp");
+    background-image: url("../img/index-background-mobile@2x.webp");
   }
 
   background-position: top 0 center;
