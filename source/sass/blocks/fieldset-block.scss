@@ -70,7 +70,7 @@
   height: 100%;
   transform: scale(0.7);
 
-  background: url("../../img/icon-tick.svg") no-repeat;
+  background: url("/img/icon-tick.svg") no-repeat;
 }
 
 /*CHECKBOX END*/
@@ -196,7 +196,7 @@
   }
 
   &--email {
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("/img/icon-mail.svg");
     background-position: right 16px bottom 16px;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -205,16 +205,16 @@
     padding-left: 14px;
 
     &:focus {
-      background-image: url("../../img/icon-mail-green.svg");
+      background-image: url("/img/icon-mail-green.svg");
     }
 
     &:invalid {
-      background-image: url("../../img/icon-mail-pink.svg");
+      background-image: url("/img/icon-mail-pink.svg");
     }
   }
 
   &--tel {
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("/img/icon-phone.svg");
     background-position: right 14px bottom 11px;
     background-repeat: no-repeat;
     background-size: 18px;
