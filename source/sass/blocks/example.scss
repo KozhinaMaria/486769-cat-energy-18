@@ -134,10 +134,13 @@
   .example__image {
     min-height: 520px;
     width: auto;
+
+    &--after{
+      left: -350px;
+    }
   }
 
   .example__picture {
-    display: flex;
     overflow: hidden;
 
     &--before {
@@ -146,14 +149,14 @@
     }
 
     &--after {
-      display: flex;
-      justify-content: flex-end;
+      display: block;
       margin-top: 51px;
       margin-right: 19px;
     }
 
     img {
       width: auto;
+      position: relative;
     }
   }
 }
