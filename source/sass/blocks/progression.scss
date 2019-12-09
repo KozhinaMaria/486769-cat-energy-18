@@ -15,38 +15,48 @@
 }
 
 .progression__value {
-  margin: 0 20px;
   appearance: none;
-  /* Hides the slider so that custom slider can be made */
-  width: 84px;
+  background: transparent;
+  width: 100%;
+}
+
+.progression__value::-moz-range-track {
   height: 14px;
   padding: 2px 6px;
 
   border-radius: 6px;
   border: solid 1px #cdcdcd;
   background-color: #ffffff;
-
-  /* Otherwise white in Chrome */
 }
 
-.progression__value:focus {
-  outline: none;
-  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-
-.progression__value::-ms-track {
-  width: 84px;
+.progression__value::-webkit-slider-runnable-track {
   height: 14px;
   padding: 2px 6px;
 
   border-radius: 6px;
   border: solid 1px #cdcdcd;
-  cursor: pointer;
+  background-color: #ffffff;
+}
 
-  /* Hides the slider so custom styles can be added */
-  background: transparent;
+.progression__value::-ms-track {
+  height: 14px;
+  padding: 2px 6px;
+  width: 74px;
+
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+  background-color: #ffffff;
+
   border-color: transparent;
   color: transparent;
+}
+
+.progression__value::-ms-fill-lower {
+  background: #ffffff;
+}
+
+.progression__value::-ms-fill-upper {
+  background: #ffffff;
 }
 
 /* Special styling for WebKit/Blink */
@@ -55,6 +65,8 @@
   width: 35px;
   height: 6px;
   border-radius: 3px;
+  box-shadow: 1px 1px 1px #ffffff, 0px 0px 1px #ffffff;
+  border: 1px solid #ffffff;
   background: #68b738;
   cursor: pointer;
 }
@@ -79,31 +91,47 @@
 
 
 @media (min-width: $tablet-width) {
+  .progression__value {
+    width: 428px;
+  }
+
+  .progression__value:focus {
+    outline: none;
+  }
+
   .progression__container {
     padding-left: 24px;
     padding-right: 20px;
   }
 
-  .progression__value {
-    margin: 10px 0;
+  .progression__value::-moz-range-track {
     width: 428px;
     height: 6px;
     border-radius: 2.5px;
-    background-color: #dcdcdc;
-
-    padding: 0;
+    cursor: pointer;
+    background: #dcdcdc;
     border: 0;
+    padding: 0;
+  }
+
+  .progression__value::-webkit-slider-runnable-track {
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    cursor: pointer;
+    background: #dcdcdc;
   }
 
   /* Special styling for WebKit/Blink */
   .progression__value::-webkit-slider-thumb {
-    position: relative;
-    border-radius: 50%;
+    box-shadow: 0 0 0 12px #ffffff, 0 0 0 13px #cdcdcd, 0 2px 5px 13px #cdcdcd;
     border: 0;
-
     width: 8px;
     height: 8px;
-    box-shadow: 0 0 0 12px #ffffff, 0 0 0 13px #cdcdcd, 0 2px 5px 13px #cdcdcd;
+    border-radius: 50%;
+    background: #68b738;;
+    cursor: pointer;
+    appearance: none;
   }
 
   /* All the same stuff for Firefox */
@@ -119,13 +147,36 @@
 
   /* All the same stuff for IE */
   .progression__value::-ms-thumb {
-    position: relative;
-    border-radius: 50%;
+    box-shadow: 0 0 0 12px #ffffff, 0 0 0 13px #cdcdcd, 0 2px 5px 13px #cdcdcd;
     border: 0;
-
     width: 8px;
     height: 8px;
-    box-shadow: 0 0 0 12px #ffffff, 0 0 0 13px #cdcdcd, 0 2px 5px 13px #cdcdcd;
+    border-radius: 50%;
+    background: #68b738;;
+    cursor: pointer;
+  }
+
+  .progression__value::-ms-track {
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+
+  .progression__value::-ms-fill-lower {
+    background-color: #dcdcdc;
+    border-radius: 2.5px;
+    box-shadow: 1px 1px 1px #dcdcdc, 0 0 1px #dcdcdc;
+  }
+
+  .progression__value::-ms-fill-upper {
+    background: #dcdcdc;
+    border-radius: 2.5px;
+    box-shadow: 1px 1px 1px #dcdcdc, 0 0  1px #dcdcdc;
   }
 
   .progression__value::-webkit-slider-thumb:hover {
