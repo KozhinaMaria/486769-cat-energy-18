@@ -65,7 +65,7 @@
   width: 35px;
   height: 6px;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px #ffffff, 0px 0px 1px #ffffff;
+  box-shadow: 1px 1px 1px #ffffff, 0 0 1px #ffffff;
   border: 1px solid #ffffff;
   background: #68b738;
   cursor: pointer;
@@ -129,7 +129,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #68b738;;
+    background: #68b738;
     cursor: pointer;
     appearance: none;
   }
@@ -152,7 +152,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #68b738;;
+    background: #68b738;
     cursor: pointer;
   }
 
