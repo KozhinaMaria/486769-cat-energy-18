@@ -132,7 +132,7 @@
     padding-top: 77px;
     margin-bottom: 90px;
 
-    border-top: unset;
+    border-top: 0;
 
     .header-line {
       top: 100px;
@@ -155,8 +155,8 @@
   .other-block__item {
     padding: 16px 0 14px 10px;
 
-    border-left: unset;
-    border-right: unset;
+    border-left: 0;
+    border-right: 0;
 
     flex-wrap: nowrap;
     align-items: center;

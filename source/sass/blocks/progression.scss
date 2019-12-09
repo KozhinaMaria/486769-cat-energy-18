@@ -91,15 +91,15 @@
     border-radius: 2.5px;
     background-color: #dcdcdc;
 
-    padding: unset;
-    border: unset;
+    padding: 0;
+    border: 0;
   }
 
   /* Special styling for WebKit/Blink */
   .progression__value::-webkit-slider-thumb {
     position: relative;
     border-radius: 50%;
-    border: unset;
+    border: 0;
 
     width: 8px;
     height: 8px;
@@ -110,7 +110,7 @@
   .progression__value::-moz-range-thumb {
     position: relative;
     border-radius: 50%;
-    border: unset;
+    border: 0;
 
     width: 8px;
     height: 8px;
@@ -121,7 +121,7 @@
   .progression__value::-ms-thumb {
     position: relative;
     border-radius: 50%;
-    border: unset;
+    border: 0;
 
     width: 8px;
     height: 8px;
