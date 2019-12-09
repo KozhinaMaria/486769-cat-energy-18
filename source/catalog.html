@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <script src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js"></script>
   <script src="js/picturefill.min.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -375,7 +376,9 @@
 
     <div class="page-footer__wrapper container">
       <div class="page-footer__item page-footer__logo-place">
-        <a class="page-footer__logo" href="#">Cat Energy Logo</a>
+          <a class="page-footer__logo" href="#">
+              <img class="page-footer__logo-icon" src="./img/logo-footer.svg" width="192" height="40" alt="Cat Energy">
+          </a>
       </div>
       <div class="page-footer__item page-footer__social social">
           <b class="social__title visually-hidden">Давайте дружить!</b>
@@ -407,6 +410,7 @@
   </footer>
 
   <script>
+    svg4everybody();
     Modernizr.on('webp', function (result) {
     if (result) {
       // Has WebP support
