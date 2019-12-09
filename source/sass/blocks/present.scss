@@ -40,6 +40,7 @@
 // }
 
 .present__title {
+  max-width: 245px;
   margin: 0;
 
   padding: 0 50px;
@@ -56,6 +57,10 @@
     flex-direction: row;
     min-width: 708px;
     height: 200px;
+  }
+
+  .present__title{
+    max-width: 100%;
   }
 
   .webp .present__wrapper {
