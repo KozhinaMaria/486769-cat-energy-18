@@ -101,8 +101,11 @@
     width: 428px;
   }
 
-  .progression__text{
+  .progression__text {
     margin: 0 10px;
+
+    font-size: 20px;
+    line-height: 1;
   }
 
   .progression__value:focus {
@@ -219,10 +222,5 @@
 
   .progression__value::-moz-range-thumb:active {
     box-shadow: 0 0 0 12px #ffffff, 0 2px 5px 13px rgba(0, 0, 0, 0.3), 0 0 0 15px #68b738;
-  }
-
-  .progression__text {
-    font-size: 20px;
-    line-height: 1;
   }
 }
