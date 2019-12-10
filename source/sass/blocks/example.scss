@@ -1,4 +1,6 @@
 .example {
+  padding-bottom: 30px;
+
   background-color: #f2f2f2;
 }
 
@@ -13,8 +15,7 @@
 }
 
 .example__progression {
-  padding-top: 17px;
-  padding-bottom: 18px;
+  padding-top: 35px;
 
   display: flex;
   justify-content: center;
@@ -72,7 +73,7 @@
     position: relative;
 
     background-color: transparent;
-    padding-bottom: 35px;
+    padding-bottom: 55px;
   }
 
   .example__bg {
@@ -127,7 +128,8 @@
   }
 
   .example__progression {
-    padding-top: unset;
+    padding-top: 13px;
+    padding-bottom: 18px;
     position: absolute;
   }
 
@@ -163,7 +165,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-bottom: 40px;
+    padding-bottom: 38px;
   }
 
   .example__wrapper {
@@ -189,8 +191,8 @@
     position: absolute;
     margin-right: 0;
 
-    right: 40px;
-    bottom: -2px;
+    right: 29px;
+    bottom: 20px;
   }
 
   .example__subtitle-value {
@@ -203,7 +205,7 @@
   }
 
   .example__subtitle {
-    padding-top: 64px;
+    padding-top: 50px;
 
     font-size: 20px;
     line-height: 1;
@@ -228,12 +230,12 @@
 
   .example__picture--before {
     width: 100%;
-    margin-top: -16px;
-    margin-left: 82px;
+    margin-top: -21px;
+    margin-left: 88px;
   }
 
   .example__picture--after {
-    margin-top: -19px;
-    margin-right: -9px;
+    margin-top: -20px;
+    margin-right: -15px;
   }
 }
