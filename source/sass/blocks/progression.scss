@@ -2,10 +2,13 @@
   position: relative;
 
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  // justify-content: center;
 }
 
 .progression__text {
+  margin: 0 10px;
+
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -17,7 +20,7 @@
 .progression__value {
   appearance: none;
   background: transparent;
-  width: 100%;
+  width: 84px;
 }
 
 .progression__value::-moz-range-track {
@@ -41,7 +44,7 @@
 .progression__value::-ms-track {
   height: 14px;
   padding: 2px 6px;
-  width: 74px;
+  width: auto;
 
   border-radius: 6px;
   border: solid 1px #cdcdcd;
@@ -64,6 +67,9 @@
   appearance: none;
   width: 35px;
   height: 6px;
+
+  margin-top: 1px;
+  
   border-radius: 3px;
   box-shadow: 1px 1px 1px #ffffff, 0 0 1px #ffffff;
   border: 1px solid #ffffff;
@@ -75,6 +81,9 @@
 .progression__value::-moz-range-thumb {
   width: 35px;
   height: 6px;
+
+  margin-top: 1px;
+
   border-radius: 3px;
   background: #68b738;
   cursor: pointer;
@@ -84,6 +93,9 @@
 .progression__value::-ms-thumb {
   width: 35px;
   height: 6px;
+
+  margin-top: 1px;
+
   border-radius: 3px;
   background: #68b738;
   cursor: pointer;
