@@ -1,5 +1,5 @@
 .form-program {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: #111111;
 }
@@ -65,7 +65,7 @@
 .form-program__order-btn {
   width: 100%;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   line-height: 2.5em;
   font-size: 16px;
@@ -180,7 +180,7 @@
   }
 
   .form-program__radio {
-    border: unset;
+    border: 0;
     padding-top: 53px;
   }
 
@@ -257,10 +257,6 @@
     &--user-info {
       display: flex;
       padding-top: 75px;
-
-      .fieldset-block__value--text {
-        //margin-left: 20px;
-      }
 
       .fieldset-block__label {
         flex-grow: 1;

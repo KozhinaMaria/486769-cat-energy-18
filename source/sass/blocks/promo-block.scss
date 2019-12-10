@@ -1,7 +1,7 @@
 .promo-block {
   position: relative;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-align: center;
   color: #ffffff;
@@ -62,7 +62,7 @@
 
 .promo-block__intro,
 .promo-block__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   line-height: 1;
 }
 
@@ -94,7 +94,7 @@
   .promo-block::before,
   .webp .promo-block::before,
   .no-webp .promo-block::before {
-    background: unset;
+    background: none;
   }
 
   .promo-block__can-image-place {
@@ -126,14 +126,14 @@
   }
 
   .promo-block__slogan {
-    padding-top: 43px;
-    padding-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 52px;
 
     font-size: 20px;
   }
 
   .promo-block__program-btn {
-    width: 245px;
+    width: 242px;
     height: 52px;
 
     margin: 0;

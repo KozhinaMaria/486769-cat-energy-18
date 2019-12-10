@@ -51,7 +51,7 @@
 .other-block__title,
 .other-block__name,
 .other-block__order-btn {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
 }
 
@@ -81,6 +81,8 @@
 @media (min-width: $tablet-width) {
   .other-block {
     padding-top: 65px;
+
+    border: 0;
 
     .header-line {
       top: calc(10% - 15px);
@@ -129,13 +131,13 @@
 
 @media (min-width: $desktop-width) {
   .other-block {
-    padding-top: 77px;
-    margin-bottom: 90px;
+    padding-top: 75px;
+    margin-bottom: 86px;
 
-    border-top: unset;
+    border-top: 0;
 
     .header-line {
-      top: 100px;
+      top: 95px;
     }
   }
 
@@ -155,8 +157,8 @@
   .other-block__item {
     padding: 16px 0 14px 10px;
 
-    border-left: unset;
-    border-right: unset;
+    border-left: 0;
+    border-right: 0;
 
     flex-wrap: nowrap;
     align-items: center;

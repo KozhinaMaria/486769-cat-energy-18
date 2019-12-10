@@ -1,6 +1,5 @@
 .more-block {
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 26px auto 6px;
 }
 
 .more-block__plus::before {
@@ -45,7 +44,7 @@
 .more-block__title {
   text-transform: uppercase;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -57,7 +56,7 @@
 
 @media (min-width: $tablet-width) {
   .more-block {
-    padding: 25px 38px;
+    padding: 20px 38px;
 
     text-align: center;
   }
@@ -89,6 +88,6 @@
   }
 
   .more-block__subtitle {
-    padding-bottom: 87px;
+    padding-bottom: 77px;
   }
 }

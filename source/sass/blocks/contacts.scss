@@ -15,7 +15,7 @@
 }
 
 .contacts__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -36,7 +36,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 60px 72px 64px 71px;
+    padding: 66px 72px 56px 71px;
   }
 
   .contacts__city {
@@ -65,7 +65,7 @@
   }
 
   .contacts {
-    padding: 0 45px 0 31px;
+    padding: 50px 45px 40px 31px;
     width: 570px;
   }
 }

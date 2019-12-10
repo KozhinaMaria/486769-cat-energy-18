@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -180,6 +184,7 @@
   <footer class="page-footer">
 
     <section class="page-footer__map map">
+      <h2 class="visually-hidden">Карта с контактами</h2>
       <div class="map__contacts contacts">
         <p class="contacts__text">приглашаем<br>
           к сотрудничеству<br>
@@ -196,7 +201,9 @@
 
     <div class="page-footer__wrapper container">
       <div class="page-footer__item page-footer__logo-place">
-        <a class="page-footer__logo" href="#">Cat Energy Logo</a>
+        <a class="page-footer__logo" href="#">
+            <img class="page-footer__logo-icon" src="./img/logo-footer.svg" width="192" height="40" alt="Cat Energy">
+        </a>
       </div>
       <div class="page-footer__item page-footer__social social">
         <b class="social__title visually-hidden">Давайте дружить!</b>
@@ -228,6 +235,7 @@
   </footer>
 
   <script>
+    svg4everybody();
     function initMap() {
       var mapElement = document.getElementById('map');
       var location = {
@@ -250,7 +258,7 @@
         position: location,
         map: map,
         icon: icon,
-        title: "bla"
+        title: "marker"
       });
     }
 
