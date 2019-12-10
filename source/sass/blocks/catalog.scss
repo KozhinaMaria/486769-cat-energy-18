@@ -80,7 +80,7 @@
   color: #111111;
 
   a {
-    display: block;
+    display: flex;
     padding-top: 20px;
     text-decoration: none;
     color: inherit;
@@ -115,8 +115,17 @@
     margin: 0 30px;
   }
 
+  .catalog__link-name {
+    display: flex;
+    align-items: end;
+
+    &::after {
+      margin-left: 23px;
+    }
+  }
+
   .catalog__item {
-    padding: 68px 312px 62px 52px;
+    padding: 68px 318px 62px 52px;
 
     &:first-child {
       padding-right: 280px;
@@ -153,7 +162,7 @@
     line-height: 1;
 
     a {
-      padding-top: unset;
+      padding-top: 0;
     }
   }
 

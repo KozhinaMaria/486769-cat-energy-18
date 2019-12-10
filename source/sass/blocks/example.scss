@@ -177,14 +177,11 @@
 
   .example__bg {
     height: calc(100% - 172px);
-
-    //height: 75%;
-    // height: 462px;
   }
 
   .example__details-wrapper {
     flex-basis: 40%;
-    padding: 35px 40px 35px 40px;
+    padding: 35px 41px;
   }
 
   .example__progression.progression {

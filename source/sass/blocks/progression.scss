@@ -66,7 +66,7 @@
 .progression__value::-webkit-slider-thumb {
   appearance: none;
   width: 35px;
-  height: 6px;
+  height: 8px;
 
   border-radius: 3px;
   box-shadow: 1px 1px 1px #ffffff, 0 0 1px #ffffff;
@@ -78,7 +78,7 @@
 /* All the same stuff for Firefox */
 .progression__value::-moz-range-thumb {
   width: 35px;
-  height: 6px;
+  height: 8px;
 
   border-radius: 3px;
   background: #68b738;
@@ -88,7 +88,7 @@
 /* All the same stuff for IE */
 .progression__value::-ms-thumb {
   width: 35px;
-  height: 6px;
+  height: 8px;
 
   border-radius: 3px;
   background: #68b738;
