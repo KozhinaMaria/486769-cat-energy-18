@@ -31,14 +31,14 @@
   }
 
   &:hover {
-    &::after{
+    &::after {
       border-bottom: 1px solid #cccccc;
     }
   }
 
   &:active,
   &:focus {
-    &::after{
+    &::after {
       border-bottom: 0;
     }
   }

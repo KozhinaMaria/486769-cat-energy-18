@@ -69,14 +69,12 @@
   }
 
   .info-block--right {
+    margin-right: auto;
+    margin-left: 42px;
+
     .info-block__text {
       left: 17px;
     }
-  }
-
-  .info-block--right {
-    margin-right: auto;
-    margin-left: 42px;
   }
 }
 
