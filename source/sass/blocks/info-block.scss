@@ -43,12 +43,14 @@
   .info-block__value {
     font-size: 30px;
     line-height: 1.23;
+
+    padding-top: 15px;
+    padding-bottom: 20px;
   }
 
   .info-block__text {
-    bottom: -19px;
     left: 23px;
-    width: 114px;
+    width: auto;
 
     font-size: 14px;
     line-height: 1;
@@ -60,6 +62,18 @@
     }
   }
 
+  .info-block--left {
+    .info-block__text {
+      left: 31px;
+    }
+  }
+
+  .info-block--right {
+    .info-block__text {
+      left: 17px;
+    }
+  }
+
   .info-block--right {
     margin-right: auto;
     margin-left: 42px;
@@ -67,9 +81,28 @@
 }
 
 @media (min-width: $desktop-width) {
+  .info-block--left {
+    .info-block__text {
+      left: 30px;
+    }
+  }
+
+  .info-block--right {
+    .info-block__text {
+      left: 18px;
+    }
+  }
+
   .info-block__text {
+    bottom: -15px;
+
     font-size: 14px;
     line-height: 1;
     background-color: #eaeaea;
+  }
+
+  .info-block__value {
+    position: relative;
+    padding-bottom: 21px;
   }
 }

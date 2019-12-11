@@ -3,11 +3,13 @@
 
   display: flex;
   align-items: baseline;
-  // justify-content: center;
 }
 
 .progression__text {
+  position: relative;
   margin: 0 15px;
+
+  cursor: pointer;
 
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
@@ -15,6 +17,31 @@
 
   font-size: 16px;
   line-height: 1.25;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    height: 1px;
+    width: 100%;
+
+    left: 0;
+    bottom: -9px;
+    border-bottom: 1px dotted #cccccc;
+  }
+
+  &:hover {
+    &::after{
+      border-bottom: 1px solid #cccccc;
+    }
+  }
+
+  &:active,
+  &:focus {
+    &::after{
+      border-bottom: 0;
+    }
+  }
 }
 
 .progression__value {
@@ -143,6 +170,7 @@
     height: 8px;
 
     margin-top: -5px;
+    margin-left: 0;
 
     border-radius: 50%;
     background: #68b738;
@@ -157,6 +185,7 @@
     border: 0;
 
     margin-top: -5px;
+    margin-left: 0;
 
     width: 8px;
     height: 8px;
@@ -171,6 +200,7 @@
     height: 8px;
 
     margin-top: -5px;
+    margin-left: 0;
 
     border-radius: 50%;
     background: #68b738;
