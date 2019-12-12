@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+.product-catalog__logo {
+  display: block;
+}
+
 .product-catalog__item-wrapper {
   padding: 0 20px;
   padding-bottom: 25px;
@@ -101,6 +105,10 @@
 @media (min-width: $tablet-width) {
   .product-catalog {
     padding: 0 30px;
+  }
+
+  .product-catalog__logo {
+    display: inline-block;
   }
 
   .product-catalog__name {

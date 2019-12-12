@@ -44,8 +44,8 @@
     <form class="form-program" action="https://echo.htmlacademy.ru">
       <div class="form-program__wrapper form-program__wrapper--header container">
         <p class="form-program__title">Подбор программы</p>
-        <p class="form-program__subtitle">Заполните анкету и мы подберем <br>
-          программу питания для вашего кота</p>
+        <p class="form-program__subtitle">Заполните анкету и мы подберем
+          <span class="form-program__text">программу питания для вашего кота</span></p>
       </div>
 
       <div class="form-program__wrapper-info container">
@@ -176,14 +176,17 @@
     <section class="page-footer__map map">
       <h2 class="visually-hidden">Карта с контактами</h2>
       <div class="map__contacts contacts contacts--default">
-        <p class="contacts__text">приглашаем<br>
-          к сотрудничеству<br>
-          дилеров!</p>
+          <p class="contacts__text">
+              <span class="contacts__sub-text">приглашаем</span>
+              <span class="contacts__sub-text">к сотрудничеству</span>
+              <span class="contacts__sub-text">дилеров!</span>
+          </p>
           <p class="contacts__address">
-              <span>ул. Большая</span> <br>
-              <span>Конюшенная, д. 19/8 </span>
-            <span class="contacts__city">Санкт-Петербург</span></p>
-      </div>
+              <span class="contacts__street contacts__street--first">ул. Большая</span>
+              <span class="contacts__street contacts__street--second">Конюшенная, д. 19/8 </span>
+              <span class="contacts__city">Санкт-Петербург</span>
+          </p>
+        </div>
       <div class="map__wrapper">
         <div id="map" class="map__place"></div>
       </div>
