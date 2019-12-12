@@ -16,19 +16,21 @@
   opacity: 0.5;
 }
 
+.social__item svg {
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: #68b738;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .social__item {
     padding: 9px 25px 0 3px;
-
-    &:hover {
-      fill: #68b738;
-    }
-
-    &:active {
-      opacity: 0.3;
-      fill: #68b738;
-    }
   }
 
   .social__link-vkontakte {
